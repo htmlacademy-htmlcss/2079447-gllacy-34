@@ -237,9 +237,46 @@
         </form>
       </section>
     </div>
+    <section class="delivery">
+      <div class="delivery-container">
+        <h3 class="title-section">Доставка любимого мороженого на дом</h3>
+        <p>Хочется полакомиться любимым десертом, но нет времени съездить в магазин? Закажите доставку мороженого на
+          дом, и курьер привезёт вам ваш заказ в течение часа!</p>
+      </div>
+      <div class="feedback">
+        <p>Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ</p>
+        <form class="delivery-form-date" action="http://htmlacademy.ru" method="post">
+          <label for="date">Дата</label>
+          <input class="form-input" id="date" name="date" type="text" placeholder="01.04.2020">
+        </form>
 
+        <form class="delivery-form-tel" action="http://htmlacademy.ru" method="post">
+          <label for="tel">Телефон</label>
+          <input class="form-input" id="tel" name="tel" type="text" placeholder="+78009990000">
+        </form>
+
+        <form class="delivery-form-adress" action="http://htmlacademy.ru" method="post">
+          <label for="address">Адрес</label>
+          <input class="form-input" id="address" name="address" type="text" placeholder="ул.Большая Конюшенная, 19/8">
+          <button class="button button-other" type="submit">Отправить</button>
+        </form>
+      </div>
+    </section>
   </main>
-
+  <footer>
+    <section class="contacts">
+      <h2 class="visually-hiden">Контакты</h2>
+      <address class="contacts-address">
+        <h3>Адрес главного офиса и офлайн-магазина:</h3>
+        <p class="contacts-address-text">наб. реки Карповки, 5 лит П, Санкт-Петербург</p>
+        <a class="contacts-phone" href="tel:+78128121212">+7 812 812-12-12</a>
+      </address>
+      <h3 class="visually-hiden">Время работы</h3>
+      <ul class="contacts-schedule">
+        <li class="contacts-schedule-item"> (с 10 до 20 ежедневно)</li>
+      </ul>
+    </section>
+  </footer>
 </body>
 
 </html>
