@@ -242,40 +242,83 @@
         <h3 class="title-section">Доставка любимого мороженого на дом</h3>
         <p>Хочется полакомиться любимым десертом, но нет времени съездить в магазин? Закажите доставку мороженого на
           дом, и курьер привезёт вам ваш заказ в течение часа!</p>
-      </div>
-      <div class="feedback">
-        <p>Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ</p>
-        <form class="delivery-form-date" action="http://htmlacademy.ru" method="post">
-          <label for="date">Дата</label>
-          <input class="form-input" id="date" name="date" type="text" placeholder="01.04.2020">
-        </form>
 
-        <form class="delivery-form-tel" action="http://htmlacademy.ru" method="post">
-          <label for="tel">Телефон</label>
-          <input class="form-input" id="tel" name="tel" type="text" placeholder="+78009990000">
-        </form>
+        <div class="feedback">
+          <p>Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ</p>
+          <form class="delivery-form-date" action="http://htmlacademy.ru" method="post">
+            <label for="delivery-date">Дата</label>
+            <input class="form-input" id="delivery-date" name="delivery-date" type="text" placeholder="01.04.2020">
+          </form>
 
-        <form class="delivery-form-adress" action="http://htmlacademy.ru" method="post">
-          <label for="address">Адрес</label>
-          <input class="form-input" id="address" name="address" type="text" placeholder="ул.Большая Конюшенная, 19/8">
-          <button class="button button-other" type="submit">Отправить</button>
-        </form>
+          <form class="delivery-form-phone" action="http://htmlacademy.ru" method="post">
+            <label for="delivery-phone">Телефон</label>
+            <input class="form-input" id="delivery-phone" name="delivery-phone" type="text"
+              placeholder="+7 800 999 00 00">
+          </form>
+
+          <form class="delivery-form-adress" action="http://htmlacademy.ru" method="post">
+            <label for="delivery-address">Адрес</label>
+            <input class="form-input" id="delivery-address" name="delivery-address" type="text"
+              placeholder="ул.Большая Конюшенная, 19/8">
+            <button class="button button-other" type="submit">Отправить</button>
+          </form>
+        </div>
       </div>
     </section>
   </main>
-  <footer>
-    <section class="contacts">
-      <h2 class="visually-hiden">Контакты</h2>
-      <address class="contacts-address">
+  <footer class="page-footer">
+    <section class="footer-contacts">
+      <h2 class="visually-hidden">Контакты</h2>
+      <img class="footer-pic" src="#" alt="Картинка мороженых в футере.">
+      <address class="footer-contacts-address">
         <h3>Адрес главного офиса и офлайн-магазина:</h3>
-        <p class="contacts-address-text">наб. реки Карповки, 5 лит П, Санкт-Петербург</p>
-        <a class="contacts-phone" href="tel:+78128121212">+7 812 812-12-12</a>
+        <p class="about-text">наб. реки Карповки, 5 лит П, Санкт-Петербург</p>
+        <a class="footer-contacts-adress-phone" href="tel:+78128121212">+7 812 812-12-12</a>
       </address>
       <h3 class="visually-hiden">Время работы</h3>
-      <ul class="contacts-schedule">
-        <li class="contacts-schedule-item"> (с 10 до 20 ежедневно)</li>
+      <div class="contacts-schedule">
+        <p class="contacts-schedule-item"> (с 10 до 20 ежедневно)</p>
+      </div>
+      <button class="button-button-other" type="submit">Форма обратной связи</button>
+    </section>
+    <section class="footer-social">
+      <ul class="social">
+        <li class="social-item">
+          <a class="social-link" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Мы в Телеграм</span>
+            <img src="#" alt="Телеграм" width="24" height="24">
+          </a>
+        </li>
+        <li class="social-item">
+          <a class="social-link" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">Мы в Контакте</span>
+            <img src="#" alt="В контакте" width="24" height="24">
+          </a>
+        </li>
+        <li class="social-item">
+          <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">Мы на YouTube</span>
+            <img src="#" alt="YouTube" width="24" height="24">
+          </a>
+        </li>
       </ul>
     </section>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="#"><b>Для поставщиков</b></a></li>
+        <li><a href="#">Наши документы</a></li>
+        <li><a href="#">О производстве</a></li>
+        <li><a href="#">Экологические стандарты</a></li>
+      </ul>
+    </div>
+    <div class="footer-copyright">
+      <a class="footer-logo" href="#">
+        <img class="page-footer-logo" src="#" width="" height="" alt="Логотип HTML Academy">
+      </a>
+      <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>&copy;
+        2021</p>
+    </div>
+
   </footer>
 </body>
 
