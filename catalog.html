@@ -12,6 +12,7 @@
     <nav class="navigation">
       <div class="logo">
         <img src="#" width="137" height="56" alt="Логотип Gllacy Shop">
+        <a class="navigation-logo" href="index.html"></a>
       </div>
       <ul class="navigation-list">
         <li class="navigation-item">
@@ -33,7 +34,7 @@
           <a class="navigation-user-link" href="#">Вход</a>
         </li>
         <li class="navigation-user-item">
-          <a class="navigation-user-link" href="#">Корзина</a>
+          <a class="navigation-user-link" href="#">2 товара</a>
         </li>
       </ul>
     </nav>
@@ -53,85 +54,86 @@
 
     <section class="catalog-products">
       <h2 class="visually-hidden">Список товаров с фильтрами</h2>
+      <div class="catalog-card-wrapper">
 
-      <select class="select-control">
-        <h3>Сортировка:</h3>
-        <option value="popular">По популярности</option>
-        <option value="cheap">Сначала недорогие</option>
-        <option value="expensive">Сначала дорогие</option>
-        <option value="fatness">По жирности</option>
-      </select>
+        <select class="select-control">
+          <h3>Сортировка:</h3>
+          <option value="popular">По популярности</option>
+          <option value="cheap">Сначала недорогие</option>
+          <option value="expensive">Сначала дорогие</option>
+          <option value="fatness">По жирности</option>
+        </select>
 
 
-      <div class="filter-item">
-        <h3>Цена: 100 руб. - 500 руб.</h3>
+        <div class="filter-item">
+          <h3>Цена: 100 руб. - 500 руб.</h3>
+        </div>
+        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Наполнители</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="chocolate" checked>шоколадные
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="sugar" checked>сахарные посыпки
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="fruits">фрукты
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="syrups">сиропы
+                </label></li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="jam">джемы
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Жирность:</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <label class="fatness">
+                  <input class="control-input" type="radio" name="product-group" value="1">
+
+                  0%
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="product-group" value="2" checked>
+
+                  до 10%
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="product-group" value="3">
+
+                  до 30%
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="product-group" value="4">
+
+                  выше 30%
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="button" type="submit">Применить</button>
+        </form>
       </div>
-      <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-        <fieldset class="catalog-filter-group">
-          <legend class="catalog-filter-title">Наполнители</legend>
-          <ul class="catalog-filter-list">
-            <li class="catalog-filter-item">
-              <label class="control">
-                <input class="control-input" type="checkbox" name="chocolate" checked>шоколадные
-              </label>
-            </li>
-            <li class="catalog-filter-item">
-              <label class="control">
-                <input class="control-input" type="checkbox" name="sugar" checked>сахарные посыпки
-              </label>
-            </li>
-            <li class="catalog-filter-item">
-              <label class="control">
-                <input class="control-input" type="checkbox" name="fruits">фрукты
-              </label>
-            </li>
-            <li class="catalog-filter-item">
-              <label class="control">
-                <input class="control-input" type="checkbox" name="syrups">сиропы
-              </label></li>
-            <li class="catalog-filter-item">
-              <label class="control">
-                <input class="control-input" type="checkbox" name="jam">джем
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="catalog-filter-group">
-          <legend class="catalog-filter-title">Жирность:</legend>
-          <ul class="catalog-filter-list">
-            <li class="catalog-filter-item">
-              <label class="fatness">
-                <input class="control-input" type="radio" name="product-group" value="1">
-
-                0%
-              </label>
-            </li>
-            <li class="catalog-filter-item">
-              <label class="control">
-                <input class="control-input" type="radio" name="product-group" value="2" checked>
-
-                до 10%
-              </label>
-            </li>
-            <li class="catalog-filter-item">
-              <label class="control">
-                <input class="control-input" type="radio" name="product-group" value="3">
-
-                до 30%
-              </label>
-            </li>
-            <li class="catalog-filter-item">
-              <label class="control">
-                <input class="control-input" type="radio" name="product-group" value="4">
-
-                выше 30%
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <button class="button" type="submit">Применить</button>
-      </form>
-
       <h3 class="visually-hidden">Попробуйте самые популярные вкусы нашего мороженого</h3>
       <ul class="catalog-list">
         <li class="catalog-item">
