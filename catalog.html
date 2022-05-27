@@ -11,12 +11,13 @@
   <header class="header">
     <nav class="navigation">
       <div class="logo">
-        <img src="#" width="137" height="56" alt="Логотип Gllacy Shop">
+        <a class="logo" href="index.html">
+          <img src="#" width="137" height="56" alt="Логотип Gllacy Shop"></a>
         <a class="navigation-logo" href="index.html"></a>
       </div>
       <ul class="navigation-list">
         <li class="navigation-item">
-          <a class="navigation-link" href="catalog.html">Каталог</a>
+          <a class="navigation-link">Каталог</a>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="#">Доставка и оплата</a>
@@ -41,99 +42,105 @@
   </header>
   <main class="main-inner">
     <header class="inner-header">
-      <ul class="breadcrumbs">
-        <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link" href="index.html">Главная</a>
-        </li>
-        <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link">Каталог</a>
-        </li>
-      </ul>
+      <section class="breadcrumbs">
+        <ul class="breadcrumbs-list">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link">Каталог</a>
+          </li>
+        </ul>
+      </section>
     </header>
     <h1 class="catalog-title">Сливочное мороженое</h1>
 
     <section class="catalog-products">
       <h2 class="visually-hidden">Список товаров с фильтрами</h2>
-      <div class="catalog-card-wrapper">
+      <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+        <fieldset class="catalog-filter-group">
+          <legend class="catalog-filter-title">Сортировка:</legend>
+          <select name="catalog-group">
+            <option value="popular">По популярности</option>
+            <option value="cheap">Сначала недорогие</option>
+            <option value="expensive">Сначала дорогие</option>
+            <option value="fatness">По жирности</option>
+          </select>
+        </fieldset>
 
-        <select class="select-control">
-          <h3>Сортировка:</h3>
-          <option value="popular">По популярности</option>
-          <option value="cheap">Сначала недорогие</option>
-          <option value="expensive">Сначала дорогие</option>
-          <option value="fatness">По жирности</option>
-        </select>
 
+        <fieldset class="catalog-filter-group">
+          <legend class="catalog-filter-title">Цена: 100 руб. - 500 руб.</legend>
+        </fieldset>
 
-        <div class="filter-item">
-          <h3>Цена: 100 руб. - 500 руб.</h3>
-        </div>
-        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Наполнители</legend>
-            <ul class="catalog-filter-list">
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" name="chocolate" checked>шоколадные
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" name="sugar" checked>сахарные посыпки
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" name="fruits">фрукты
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" name="syrups">сиропы
-                </label></li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" name="jam">джемы
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Жирность:</legend>
-            <ul class="catalog-filter-list">
-              <li class="catalog-filter-item">
-                <label class="fatness">
-                  <input class="control-input" type="radio" name="product-group" value="1">
+        <fieldset class="catalog-filter-group">
+          <legend class="catalog-filter-title">Наполнители</legend>
+          <ul class="catalog-filter-list">
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="checkbox" name="chocolate" checked>шоколадные
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="checkbox" name="sugar" checked>сахарные посыпки
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="checkbox" name="fruits">фрукты
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="checkbox" name="syrups">сиропы
+              </label></li>
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="checkbox" name="jam">джемы
+              </label>
+            </li>
+          </ul>
+        </fieldset>
 
-                  0%
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="radio" name="product-group" value="2" checked>
+        <fieldset class="catalog-filter-group">
+          <legend class="catalog-filter-title">Жирность:</legend>
+          <ul class="catalog-filter-list">
+            <li class="catalog-filter-item">
+              <label class="fatness">
+                <input class="control-input" type="radio" name="product-group" value="1">
 
-                  до 10%
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="radio" name="product-group" value="3">
+                0%
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="radio" name="product-group" value="2" checked>
 
-                  до 30%
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="radio" name="product-group" value="4">
+                до 10%
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="radio" name="product-group" value="3">
 
-                  выше 30%
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <button class="button" type="submit">Применить</button>
-        </form>
-      </div>
+                до 30%
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="radio" name="product-group" value="4">
+
+                выше 30%
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="button" type="submit">Применить</button>
+      </form>
+    </section>
+
+    <section class="catalog">
       <h3 class="visually-hidden">Попробуйте самые популярные вкусы нашего мороженого</h3>
       <ul class="catalog-list">
         <li class="catalog-item">
@@ -318,75 +325,85 @@
           </div>
         </li>
       </ul>
-      <ul class="pagination">
-        <li class="pagination-item">
-          <a class="pagination-link pagination-prev pagination-disabled">
-            <span class="visually-hidden">Предыдущая страница</span>
+      <div class="pagination-catalog">
+
+        <a class="pagination-link pagination-prev" href="#">
+          <span class="visually-hidden">Предыдущая страница</span>
+        </a>
+        <ul class="pagination">
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">1</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">2</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link pagination-current">3</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">4</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">5</a>
+          </li>
+        </ul>
+
+        <a class="pagination-link pagination-next" href="#">
+          <span class="visually-hidden">Следующая страница</span>
+        </a>
+        <button class="button pagination-show-more" type="button">Показать ещё</button>
+
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <section class="footer-social">
+      <ul class="social">
+        <li class="social-item">
+          <a class="social-link" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Мы в Телеграм</span>
+            <img src="#" alt="Телеграм" width="24" height="24">
           </a>
         </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">1</a>
+        <li class="social-item">
+          <a class="social-link" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">Мы в Контакте</span>
+            <img src="#" alt="В контакте" width="24" height="24">
+          </a>
         </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">2</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link pagination-current">3</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">4</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">5</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link pagination-next" href="#">
-            <span class="visually-hidden">Следующая страница</span>
+        <li class="social-item">
+          <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">Мы на YouTube</span>
+            <img src="#" alt="YouTube" width="24" height="24">
           </a>
         </li>
       </ul>
-      <button class="button pagination-show-more" type="button">Показать ещё</button>
     </section>
-  </main>
+
+    <ul class="footer-documents">
+      <li class="documents-item">
+        <a class="documents-link documents-favourite" href="#">Для поставщиков</a></li>
+
+      <li class="documents-item">
+        <a class="documents-link" href="#">Наши документы</a></li>
+
+      <li class="documents-item">
+        <a class="documents-link" href="#">О производстве</a></li>
+
+      <li class="documents-item">
+        <a class="documents-link" href="#">Экологические стандарты</a></li>
+    </ul>
+
+    <div class="footer-copyright">
+      <a class="footer-logo" href="#">
+        <img class="page-footer-logo" src="#" width="" height="" alt="Логотип HTML Academy">
+      </a>
+      <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>&copy;
+        2021</p>
+    </div>
+
+  </footer>
+
 </body>
-<footer class="catalog-footer">
-  <section class="catalog-footer-social">
-    <ul class="catalog-social">
-      <li class="catalog-social-item">
-        <a class="social-link" href="https://t.me/htmlacademy">
-          <span class="visually-hidden">Мы в Телеграм</span>
-          <img src="#" alt="Телеграм" width="24" height="24">
-        </a>
-      </li>
-      <li class="catalog-social-item">
-        <a class="social-link" href="https://vk.com/htmlacademy">
-          <span class="visually-hidden">Мы в Контакте</span>
-          <img src="#" alt="В контакте" width="24" height="24">
-        </a>
-      </li>
-      <li class="catalog-social-item">
-        <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
-          <span class="visually-hidden">Мы на YouTube</span>
-          <img src="#" alt="YouTube" width="24" height="24">
-        </a>
-      </li>
-    </ul>
-  </section>
-  <div class="catalog-footer-nav">
-    <ul>
-      <li><a href="#"><b>Для поставщиков</b></a></li>
-      <li><a href="#">Наши документы</a></li>
-      <li><a href="#">О производстве</a></li>
-      <li><a href="#">Экологические стандарты</a></li>
-    </ul>
-  </div>
-  <div class="catalog-footer-copyright">
-    <a class="footer-logo" href="#">
-      <img class="page-footer-logo" src="#" width="" height="" alt="Логотип HTML Academy">
-    </a>
-    <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>&copy;
-      2021</p>
-  </div>
-</footer>
 
 </html>
