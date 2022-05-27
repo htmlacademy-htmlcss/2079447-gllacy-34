@@ -242,20 +242,21 @@
       <div class="feedback">
         <p>Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ</p>
         <form class="delivery-form" action="http://htmlacademy.ru" method="post">
+          <p class="delivery-form-date">
+            <label class="form-label" for="delivery-date">Дата</label>
+            <input class="form-input" id="delivery-date" name="delivery-date" type="text" placeholder="01.04.2020">
+          </p>
 
-          <label class="delivery-label" for="delivery-date">Дата</label>
-          <input class="form-input" id="delivery-date" name="delivery-date" type="text" placeholder="01.04.2020">
+          <p class="delivery-form-phone">
+            <label class="form-label" for="delivery-phone">Телефон</label>
+            <input class="form-input" id="delivery-phone" name="delivery-phone" type="tel"
+              placeholder="+7 800 999 00 00">
+          </p>
 
-
-
-          <label class="delivery-label" for="delivery-phone">Телефон</label>
-          <input class="form-input" id="delivery-phone" name="delivery-phone" type="tel" placeholder="+7 800 999 00 00">
-
-
-
-          <label class="delivery-label" for="delivery-address">Адрес</label>
-          <input class="form-input" id="delivery-address" name="delivery-address" type="text"
-            placeholder="ул.Большая Конюшенная, 19/8">
+          <p class="delivery-form-address">
+            <label class="form-label" for="delivery-address">Адрес</label>
+            <input class="form-input" id="delivery-address" name="delivery-address" type="text"
+              placeholder="ул.Большая Конюшенная, 19/8"></p>
           <button class="button button-other" type="submit">Отправить</button>
 
 
@@ -265,18 +266,15 @@
 
 
     <section class="footer-contacts">
-      <h2 class="visually-hidden">Контакты</h2>
-      <img class="footer-pic" src="#" alt="Картинка мороженых в футере.">
-      <address class="footer-contacts-address">
+      <div class="contacts">
+
         <h3>Адрес главного офиса и офлайн-магазина:</h3>
-        <p class="about-text">наб. реки Карповки, 5 лит П, Санкт-Петербург</p>
-        <a class="footer-contacts-adress-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      </address>
-      <h3 class="visually-hiden">Время работы</h3>
-      <div class="contacts-schedule">
-        <p class="contacts-schedule-item"> (с 10 до 20 ежедневно)</p>
+        <p class="address">наб. реки Карповки, 5 лит П, Санкт-Петербург</p>
+        <span class="contacts-link">Для заказов по телефону:</span>
+        <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <span class="contacts-schedule"> (с 10 до 20 ежедневно)</span>
+        <a class="button-button-other" href="#">Форма обратной связи</a>
       </div>
-      <button class="button-button-other" type="submit">Форма обратной связи</button>
     </section>
   </main>
 
