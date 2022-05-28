@@ -34,7 +34,7 @@
           <a class="navigation-user-link" href="#">Вход</a>
         </li>
         <li class="navigation-user-item">
-          <a class="navigation-user-link" href="#">Корзина</a>
+          <a class="navigation-user-link" href="#">Пусто</a>
         </li>
       </ul>
     </nav>
@@ -68,10 +68,10 @@
             <img src="#" width="306" height="507" alt="Нежный пломбир с клубничным джемом.">
           </div>
           <div class="slider-thumbnail-item">
-            <img src="#" width="306" height="507" alt="Сливочное мороженое со вкусом банана.">
+            <img src="#" width="66" height="150" alt="Сливочное мороженое со вкусом банана.">
           </div>
           <div class="slider-thumbnail-item">
-            <img src="#" width="306" height="507" alt="Карамельный пломбир с маршмеллоу.">
+            <img src="#" width="66" height="150" alt="Карамельный пломбир с маршмеллоу.">
           </div>
         </div>
       </div>
@@ -124,13 +124,13 @@
           <h3>Малинка даром!</h3>
           <p>При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
           <a class="button button-main" href="#">Хочу подарок</a>
-          <img src="#" width="" height="" alt="Малинка в рожке.">
+
         </div>
         <div class="gift-item gift-item-marshmallow">
           <h3>Маршмеллоу даром!</h3>
           <p2>При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p2>
           <a class="button button-main" href="#">Хочу подарок</a>
-          <img src="#" width="" height="" alt="Маршмеллоу в рожке.">
+
         </div>
       </div>
     </section>
@@ -145,7 +145,7 @@
             <h2 class="catalog-title">Малинка</h2>
             <p class="catalog-descript">Сливочное мороженое с малиновым джемом</p>
             <div class="catalog-card-wrapper">
-              <span class="catalog-price">310 Р/кг</span>
+              <span class="catalog-price">310 ₽/кг</span>
               <a class="catalog-card" href="#">
                 <span class="visually-hidden">Положить в корзину</span>
               </a>
@@ -160,7 +160,7 @@
             <h2 class="catalog-title">Фисташка</h2>
             <p class="catalog-descript">Фисташковый пломбир с кусочками шоколада</p>
             <div class="catalog-card-wrapper">
-              <span class="catalog-price">340 Р/кг</span>
+              <span class="catalog-price">340 ₽/кг</span>
               <a class="catalog-card" href="#">
                 <span class="visually-hidden">Положить в корзину</span>
               </a>
@@ -175,7 +175,7 @@
             <h2 class="catalog-title">Черника</h2>
             <p class="catalog-descript">Крем-брюле с черничным джемом</p>
             <div class="catalog-card-wrapper">
-              <span class="catalog-price">330 Р/кг</span>
+              <span class="catalog-price">330 ₽/кг</span>
               <a class="catalog-card" href="#">
                 <span class="visually-hidden">Положить в корзину</span>
               </a>
@@ -190,7 +190,7 @@
             <h2 class="catalog-title">Бабл-гам</h2>
             <p class="catalog-descript">Ванильный пломбир со сладкой посыпкой</p>
             <div class="catalog-card-wrapper">
-              <span class="catalog-price">320 Р/кг</span>
+              <span class="catalog-price">320 ₽/кг</span>
               <a class="catalog-card" href="#">
                 <span class="visually-hidden">Положить в корзину</span>
               </a>
@@ -238,45 +238,48 @@
         <h3 class="title-section">Доставка любимого мороженого на дом</h3>
         <p>Хочется полакомиться любимым десертом, но нет времени съездить в магазин? Закажите доставку мороженого на
           дом, и курьер привезёт вам ваш заказ в течение часа!</p>
+      </div>
 
-        <div class="feedback">
-          <p>Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ</p>
-          <form class="delivery-form-date" action="http://htmlacademy.ru" method="post">
-            <label for="delivery-date">Дата</label>
+      <div class="feedback">
+        <p>Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ</p>
+        <form class="delivery-form" action="http://htmlacademy.ru" method="post">
+          <p class="delivery-form-date">
+            <label class="form-label" for="delivery-date">Дата</label>
             <input class="form-input" id="delivery-date" name="delivery-date" type="text" placeholder="01.04.2020">
-          </form>
+          </p>
 
-          <form class="delivery-form-phone" action="http://htmlacademy.ru" method="post">
-            <label for="delivery-phone">Телефон</label>
-            <input class="form-input" id="delivery-phone" name="delivery-phone" type="text"
+          <p class="delivery-form-phone">
+            <label class="form-label" for="delivery-phone">Телефон</label>
+            <input class="form-input" id="delivery-phone" name="delivery-phone" type="tel"
               placeholder="+7 800 999 00 00">
-          </form>
+          </p>
 
-          <form class="delivery-form-adress" action="http://htmlacademy.ru" method="post">
-            <label for="delivery-address">Адрес</label>
+          <p class="delivery-form-address">
+            <label class="form-label" for="delivery-address">Адрес</label>
             <input class="form-input" id="delivery-address" name="delivery-address" type="text"
-              placeholder="ул.Большая Конюшенная, 19/8">
-            <button class="button button-other" type="submit">Отправить</button>
-          </form>
-        </div>
+              placeholder="ул.Большая Конюшенная, 19/8"></p>
+          <button class="button button-other" type="submit">Отправить</button>
+
+
+        </form>
+      </div>
+    </section>
+
+
+    <section class="footer-contacts">
+      <div class="contacts">
+
+        <h3>Адрес главного офиса и офлайн-магазина:</h3>
+        <p class="address">наб. реки Карповки, 5 лит П, Санкт-Петербург</p>
+        <span class="contacts-link">Для заказов по телефону:</span>
+        <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <span class="contacts-schedule"> (с 10 до 20 ежедневно)</span>
+        <a class="button-button-other" href="#">Форма обратной связи</a>
       </div>
     </section>
   </main>
+
   <footer class="page-footer">
-    <section class="footer-contacts">
-      <h2 class="visually-hidden">Контакты</h2>
-      <img class="footer-pic" src="#" alt="Картинка мороженых в футере.">
-      <address class="footer-contacts-address">
-        <h3>Адрес главного офиса и офлайн-магазина:</h3>
-        <p class="about-text">наб. реки Карповки, 5 лит П, Санкт-Петербург</p>
-        <a class="footer-contacts-adress-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      </address>
-      <h3 class="visually-hiden">Время работы</h3>
-      <div class="contacts-schedule">
-        <p class="contacts-schedule-item"> (с 10 до 20 ежедневно)</p>
-      </div>
-      <button class="button-button-other" type="submit">Форма обратной связи</button>
-    </section>
     <section class="footer-social">
       <ul class="social">
         <li class="social-item">
@@ -299,14 +302,21 @@
         </li>
       </ul>
     </section>
-    <div class="footer-nav">
-      <ul>
-        <li><a href="#"><b>Для поставщиков</b></a></li>
-        <li><a href="#">Наши документы</a></li>
-        <li><a href="#">О производстве</a></li>
-        <li><a href="#">Экологические стандарты</a></li>
-      </ul>
-    </div>
+
+    <ul class="footer-documents">
+      <li class="documents-item">
+        <a class="documents-link documents-favourite" href="#">Для поставщиков</a></li>
+
+      <li class="documents-item">
+        <a class="documents-link" href="#">Наши документы</a></li>
+
+      <li class="documents-item">
+        <a class="documents-link" href="#">О производстве</a></li>
+
+      <li class="documents-item">
+        <a class="documents-link" href="#">Экологические стандарты</a></li>
+    </ul>
+
     <div class="footer-copyright">
       <a class="footer-logo" href="#">
         <img class="page-footer-logo" src="#" width="" height="" alt="Логотип HTML Academy">
