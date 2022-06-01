@@ -3,23 +3,59 @@
   font-style: normal;
   font-weight: 400;
 
-  src: url("fonts\inter-400.woff2") format("woff2");
+  src: url("../fonts/inter-400.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {font-family: "Inter";
   font-style: normal;
   font-weight: 700;
 
-  src: url("fonts\inter-700.woff2") format("woff2");
+  src: url("../fonts/inter-700.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {font-family: "Inter";
   font-style: normal;
   font-weight: 900;
 
-  src: url("fonts\inter-900.woff2") format("woff2");
+  src: url("../fonts/inter-900.woff2") format("woff2");
   font-display: swap;
 }
 body {
-  font-family: "Inter";
+font-family: "Inter", sans-serif;
+font-style: regular;
+font-size: 18px;
+line-height: 24px;
+background-color:#FEAFC3;
+color:#2D3440;
 }
+.gift-container{
+background-color:#FF7799;
+color:#2D3440;
+}
+
+.navigation-list{
+font-family: "Inter", sans-serif;
+font-style: regular;
+font-size: 16px;
+line-height: 20px;
+}
+.navigation-phone{
+font-family: Inter;
+font-style: bold;
+font-size: 16px;
+line-height: 20px;
+font-weight: 700;
+}
+
+.navigation-link{
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  color:#2D3440;
+  background-color: #FEAFC3;
+  text-decoration: none;
+}
+.promo {background-image: url("../images/news_img.png");}
+
