@@ -146,11 +146,132 @@ text-align: center;
 .advantages-container{
   background-color:#FFFFFF;
   background-image: url("../images/waffles.png");
-  color:#565C66}
+  color:#565C66;}
 
 .blog-news{
   background-image: url("../images/news_img.png");
   background-size: 100% auto;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;}
+
+  .blog-news p{
+    line-height: 20px;
+    color:#565C66;
+  }
+.blog-news a{
+  font-weight: 700;
+  font-size:  24px;
+  line-height: 30px;
+  font-family: inherit;
+  font-style: inherit;
+  color:inherit;
+  text-align: center;
+  text-decoration: none;
+
+}
+.delivery-container{
+  background-image: url("../images/delivery_img.png");
+  color:#565C66;
+  background-size: 100% auto;
+  background-repeat: no-repeat;}
+
+.subscribe p {
+  color: #565C66;
+  font-weight: 400;
+  font-size:16px;
+  line-height: 22px;
 }
 
+.form-input{
+  background-color: #FFFFFF;
+  border:1px solid #B9B9B9;
+  color: #B9B9B9;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+.button button-other {background-color:#FF2F64}
+.delivery-container{
+  color: #565C66;
+}
+.form-label{
+  font-weight: 700;
+  font-size:16px;
+  line-height: 20px;
+  color: #FCFCFC;
+}
+.contacts{
+  background-image: url("../images/contacts_img.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;}
+
+.address{
+  font-weight: 700;
+  font-size:20px;
+  line-height: 24px;
+}
+.contacts-phone{
+  font-weight: 700;
+  font-size:20px;
+  line-height: 24px;
+}
+.contacts-text{
+  font: size 14px;
+  line-height: 20px;
+  color:#565C66;
+}
+.documents-link documents-favourite{
+  font-weight: 700;
+  font-size:14px;
+  line-height: 20px;
+  color: #2D3440;
+}
+.documents-link{
+  font-weight: 400;
+  font-size:14px;
+  line-height: 20px;
+  color: #2D3440;
+}
+.about-text{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+.htmlacademy-link{
+  color: #2D3440;
+}
+.breadcrumbs{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+.breadcrumbs-link{
+  color: inherit;
+}
+.title-block{
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  color: #2D3440;
+}
+.catalog-filter-group{
+  font-size: 14px;
+  line-height: 20px;
+}
+.pagination{
+  background-color: #FEAFC3;
+}
+.pagination-link{
+  color: #2D3440;
+  background-color: #000000;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+.pagination-link pagination-current{
+  color: #2D3440;
+  background-color: #FFFFFF;
+}
+.pagination-link pagination-prev{
+  color: #2D3440;
+}
