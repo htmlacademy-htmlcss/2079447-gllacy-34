@@ -110,11 +110,22 @@ img {
   color: inherit;
   text-decoration: none;
   margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 6px 16px;
 }
 
 .navigation-user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
   max-width: 450px;
   margin-left: auto;
+  padding: 6px 16px;
+  gap: 6px;
 }
 
 .navigation-user-link {
@@ -140,7 +151,7 @@ img {
 }
 
 .slider-description {
-  width: 500px;
+  width: 484px;
 }
 
 .slider-item {
@@ -169,6 +180,10 @@ img {
   align-items: center;
 }
 
+.slider-thumbnail-item {
+  opacity: 0.4;
+}
+
 .slider-bullet {
   width: 12px;
   height: 12px;
@@ -182,9 +197,10 @@ img {
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  width: 200px;
+  width: 293px;
   display: flex;
   justify-content: space-between;
+
 }
 
 .slider-arrow {
@@ -226,9 +242,19 @@ img {
 }
 
 .social-link {
-  display: block;
+  display: inline-block;
   width: 24px;
   height: 24px;
+}
+
+.social {
+  display: flex;
+
+}
+
+li .social-item {
+  position: absolute;
+  margin-left: 20px;
 }
 
 .title-section {
@@ -237,6 +263,14 @@ img {
   line-height: 46px;
   text-align: center;
   color: #2D3440;
+}
+
+.gift {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 41px;
+  padding: 36px 200px 36px 36px;
+  gap: 28px;
 }
 
 .gift-item {
@@ -279,9 +313,10 @@ img {
   line-height: 24px;
 }
 
-/* .catalog { */
-/* display: flex; */
-/* } */
+.catalog-list {
+  display: grid;
+  grid-template-columns: auto;
+}
 
 .advantages-container {
   background-color: #FFFFFF;
@@ -295,6 +330,10 @@ img {
   border-radius: 16px;
   background-image: url("../images/waffles.png");
   background-size: cover;
+}
+
+.promo {
+  display: grid;
 }
 
 .blog-news {
@@ -323,12 +362,17 @@ img {
   color: #565C66;
 
 
+
 }
 
 .delivery {
   background-image: url("../images/delivery_img.png");
   background-repeat: no-repeat;
   border-radius: 16px;
+  display: flex;
+  flex-grow: 0;
+  justify-content: space-between;
+  padding: 30px;
 }
 
 .feedback {
@@ -384,6 +428,7 @@ img {
   background-color: #FCFCFC;
   box-shadow: 0px 8px 16px rgba(45, 52, 64, 0.12);
   border-radius: 8px;
+  padding: 64px;
 }
 
 .contacts-address {
@@ -429,6 +474,7 @@ img {
 }
 
 .breadcrumbs {
+  display: flex;
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
