@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/outlines.css">
 </head>
 
 <body>
@@ -52,7 +53,7 @@
           <a class="breadcrumbs-link" href="#">Каталог</a>
         </li>
       </ul>
-      <h1 class="title-block">Сливочное мороженое</h1>
+      <h1 class="title-section">Сливочное мороженое</h1>
     </section>
     <section class="catalog-products">
       <h2 class="visually-hidden">Список товаров с фильтрами</h2>
@@ -324,13 +325,16 @@
           </div>
         </li>
       </ul>
-      <div class="pagination-catalog">
-        <button class="button button-main" type="button">Показать ещё</button>
-        <div class="pagination-catalog-container">
-          <a class="pagination-link pagination-prev" href="#">
+      <div class="pagination">
+        <button class="button" type="button">Показать еще</button>
+        <div class="pagination-container">
+          <button class="pagination-arrow pagination-arrow-prev" type="button" disabled>
             <span class="visually-hidden">Предыдущая страница</span>
-          </a>
-          <ul class="pagination list-reset">
+            <svg width="7" height="12">
+              <use xlink:href="img/sprite.svg#icon-pagination"></use>
+            </svg>
+          </button>
+          <ul class="pagination-list list-reset">
             <li class="pagination-item">
               <a class="pagination-link" href="#">1</a>
             </li>
@@ -338,7 +342,7 @@
               <a class="pagination-link" href="#">2</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link pagination-current">3</a>
+              <a class="pagination-link pagination-link-current" href="#">3</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">4</a>
@@ -347,10 +351,12 @@
               <a class="pagination-link" href="#">5</a>
             </li>
           </ul>
-
-          <a class="pagination-link pagination-next" href="#">
+          <button class="pagination-arrow pagination-arrow-next" type="button">
             <span class="visually-hidden">Следующая страница</span>
-          </a>
+            <svg width="7" height="12">
+              <use xlink:href="img/sprite.svg#icon-pagination"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </section>
@@ -395,12 +401,10 @@
     </ul>
 
     <div class="footer-copyright">
-      <a class="footer-logo" href="#">
-        <img class="page-footer-logo" src="images/items/logo_htmlacademy.svg" width="93" height="27"
-          alt="Логотип HTML Academy">
+      <a class="footer-logo" href="https://htmlacademy.ru/">
+        <img src="images/items/logo_htmlacademy.svg" width="93" height="27" alt="Логотип HTML Academy">
       </a>
-      <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>&copy;
-        2021</p>
+      <p class="footer-copyright-text">Сделано в <a href="https://htmlacademy.ru/">.html academy</a>&#169;2021;</p>
     </div>
 
   </footer>

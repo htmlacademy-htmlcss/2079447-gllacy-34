@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/outlines.css">
 </head>
 
 <body>
@@ -63,21 +64,31 @@
             <a class="button button-main" href="#">Заказать</a>
           </div>
         </div>
-        <div class="slider-thumbnail">
-          <div class="slider-thumbnail-item slider-thumbnail-item-active">
-            <img src="images/slider/ice_slider_1.png" width="306" height="507"
-              alt="Нежный пломбир с клубничным джемом.">
+
+        <div class="slider-control">
+          <div class="slider-thumbnail">
+            <div class="slider-thumbnail-item slider-thumbnail-item-active">
+              <img src="images/slider/ice_slider_1.png" width="306" height="507"
+                alt="Нежный пломбир с клубничным джемом.">
+            </div>
+            <div class="slider-thumbnail-item">
+              <img src="images/slider/ice_slider_2.png" width="66" height="150"
+                alt="Сливочное мороженое со вкусом банана.">
+            </div>
+            <div class="slider-thumbnail-item">
+              <img src="images/slider/ice_slider_3.png" width="66" height="150" alt="Карамельный пломбир с маршмеллоу.">
+            </div>
           </div>
-          <div class="slider-thumbnail-item">
-            <img src="images/slider/ice_slider_2.png" width="66" height="150"
-              alt="Сливочное мороженое со вкусом банана.">
-          </div>
-          <div class="slider-thumbnail-item">
-            <img src="images/slider/ice_slider_3.png" width="66" height="150" alt="Карамельный пломбир с маршмеллоу.">
+          <div class="slider-navigation-arrow">
+            <button class="slider-arrow slider-arrow-prev" type="button">
+              <span class="visually-hidden">Предыдущий слайд</span>
+            </button>
+            <button class="slider-arrow slider-arrow-next" type="button">
+              <span class="visually-hidden">Следующий слайд</span>
+            </button>
           </div>
         </div>
-      </div>
-      <div class="slider-navigation">
+
         <div class="slider-navigation-bullet">
           <button class="slider-bullet slider-bullet-active" type="button">
             <span class="visually-hidden">Первый слайд</span>
@@ -89,16 +100,8 @@
             <span class="visually-hidden">Третий слайд</span>
           </button>
         </div>
-        <div class="slider-navigation-arrow">
-          <button class="slider-arrow slider-arrow-prev" type="button">
-            <span class="visually-hidden">Предыдущий слайд</span>
-          </button>
-          <button class="slider-arrow slider-arrow-next" type="button">
-            <span class="visually-hidden">Следующий слайд</span>
-          </button>
-        </div>
       </div>
-      <ul class="social list-reset">
+      <ul class="sliser-social social list-reset">
         <li class="social-item">
           <a class="social-link" href="https://t.me/htmlacademy">
             <span class="visually-hidden">Мы в Телеграмм</span>
@@ -118,6 +121,7 @@
           </a>
         </li>
       </ul>
+
     </section>
     <section class="gift">
       <h2 class="title-section gift-title">Заказывайте мороженое и получайте подарки!</h2>
@@ -217,7 +221,7 @@
         </ul>
       </div>
     </section>
-    <div class="promo">
+    <section class="promo">
       <section class="blog-news">
         <p>Новое в нашем блоге</p>
         <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
@@ -234,7 +238,7 @@
           <button class="button button-other" type="submit">Отправить</button>
         </form>
       </section>
-    </div>
+    </section>
     <section class="delivery">
       <div class="delivery-container">
         <h3 class="title-section">Доставка любимого мороженого на дом</h3>
@@ -273,7 +277,7 @@
       <h2 class="visually-hidden">Контакты</h2>
       <div class="contacts-container">
         <p class="contacts-text">Адрес главного офиса и офлайн-магазина</p>
-        <address>наб. реки Карповки, 5 лит П, Санкт-Петербург</address>
+        <address class="contacts-address">наб. реки Карповки, 5 лит П, Санкт-Петербург</address>
         <p class="contacts-text">Для заказов по телефону:</p>
         <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         <p class="contacts-text"> (с 10 до 20 ежедневно)</p>
@@ -321,12 +325,10 @@
     </ul>
 
     <div class="footer-copyright">
-      <a class="footer-logo" href="#">
-        <img class="page-footer-logo" src="images/items/logo_htmlacademy.svg" width="93" height="27"
-          alt="Логотип HTML Academy">
+      <a class="footer-logo" href="https://htmlacademy.ru/">
+        <img src="images/items/logo_htmlacademy.svg" width="93" height="27" alt="Логотип HTML Academy">
       </a>
-      <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>&copy;
-        2021</p>
+      <p class="footer-copyright-text">Сделано в <a href="https://htmlacademy.ru/">.html academy</a>&#169;2021;</p>
     </div>
 
   </footer>
