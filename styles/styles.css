@@ -149,6 +149,26 @@ img {
 
 .main {
   flex-grow: 1;
+  padding-top: 34px;
+  padding-bottom: 44px;
+}
+
+.slider {
+  margin-bottom: 80px;
+}
+
+.slider-title {
+  margin-top: 136px;
+  margin-bottom: 24px;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 46px;
+}
+
+.slider-description-item {
+  margin-top: 24px;
+  margin-bottom: 48px;
+
 }
 
 .slider-container {
@@ -175,11 +195,6 @@ img {
   display: block;
 }
 
-.slider-title {
-  font-weight: 900;
-  font-size: 36px;
-  line-height: 46px;
-}
 
 .slider-control {
   position: relative;
@@ -212,7 +227,6 @@ img {
   width: 293px;
   display: flex;
   justify-content: space-between;
-
 }
 
 .slider-arrow {
@@ -275,12 +289,12 @@ img {
   line-height: 46px;
   text-align: center;
   color: #2D3440;
+  margin-bottom: 107px;
 }
 
 .gift {
-  gap: 41px;
-  padding: 36px 200px 36px 36px;
-  gap: 28px;
+  margin-bottom: 80px;
+  width: 1170px;
 }
 
 .gift-item {
@@ -288,6 +302,15 @@ img {
   padding: 36px 200px 36px 36px;
   background-repeat: no-repeat;
   border-radius: 16px;
+  gap: 28px;
+}
+
+.gift-title {
+  margin-bottom: 55px;
+}
+
+.gift-item-description {
+  margin-bottom: 28px;
 }
 
 .gift-container {
@@ -297,7 +320,6 @@ img {
 
 .gift-item-raspberry {
   background-image: url("../images/raspberries_cup.png");
-  padding: 36px 200px 36px 36px;
 }
 
 .gift-item-marshmallow {
@@ -308,6 +330,10 @@ img {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
+}
+
+.catalog {
+  margin-bottom: 80px;
 }
 
 .catalog-wrapper {
@@ -366,6 +392,7 @@ img {
 }
 
 .advantages {
+  margin-bottom: 80px;
   padding: 24px;
   border-radius: 16px;
   background-image: url("../images/waffles.png");
@@ -374,6 +401,7 @@ img {
 
 .promo {
   display: grid;
+  margin-bottom: 80px;
 }
 
 .blog-news {
@@ -398,13 +426,6 @@ img {
 
 }
 
-.delivery-container {
-  color: #565C66;
-
-
-
-}
-
 .delivery {
   background-image: url("../images/delivery_img.png");
   background-repeat: no-repeat;
@@ -412,6 +433,11 @@ img {
   overflow: hidden;
   width: 1170px;
   background-size: cover;
+  margin-bottom: 80px;
+}
+
+.delivery-container {
+  color: #565C66;
 }
 
 .feedback {
@@ -460,6 +486,8 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 16px;
+  margin-bottom: 0px;
+
 }
 
 .contacts-container {
