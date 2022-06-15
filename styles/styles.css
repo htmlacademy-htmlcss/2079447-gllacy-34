@@ -277,8 +277,9 @@ img {
   height: 100%;
 }
 
-.social {
+.sliser-social {
   display: flex;
+  justify-content: flex-end;
 
 }
 
@@ -322,10 +323,12 @@ img {
 }
 
 .gift-title {
-  margin-bottom: 55px;
+  Width: 434px;
+  margin: 80px 466px 55px 466px;
 }
 
 .gift-item-description {
+  display: block;
   margin-bottom: 28px;
 }
 
@@ -336,10 +339,12 @@ img {
 
 .gift-item-raspberry {
   background-image: url("../images/raspberries_cup.png");
+  margin-right: 15px;
 }
 
 .gift-item-marshmallow {
   background-image: url("../images/marshmallows_cup.png");
+  margin-left: 15px;
 }
 
 .gift-container h3 {
@@ -356,7 +361,9 @@ img {
   text-align: center;
 
 }
-
+.title-section .catalog{
+  width: 527px;
+}
 .catalog-title {
   margin-top: 0;
   margin-bottom: 8px;
@@ -449,6 +456,8 @@ img {
 }
 
 .delivery {
+  display: flex;
+  justify-content: space-between;
   background-image: url("../images/delivery_img.png");
   background-repeat: no-repeat;
   border-radius: 16px;
@@ -459,8 +468,10 @@ img {
 }
 
 .delivery.title-section {
-  margin-top: 167px;
-  margin-bottom: 24px;
+  width: 356px;
+  padding: 167px 150px 24px 100px;
+  /* margin-top: 167px; */
+  /* margin-bottom: 24px; */
 }
 
 .delivery-container {
@@ -651,12 +662,13 @@ img {
 }
 
 .footer-documents {
-
   width: 400px;
   display: grid;
   grid-template-columns: max-content max-content;
   gap: 8px 24px;
   align-content: start;
+  justify-content: center;
+
 }
 
 .footer-copyright {
