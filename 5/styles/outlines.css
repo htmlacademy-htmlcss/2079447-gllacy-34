@@ -1,0 +1,25 @@
+header,
+main,
+body,
+footer,
+article,
+aside,
+
+div,
+section {
+  outline: 1px solid green;
+}
+
+h1,
+h2,
+h3,
+h4,
+ul,
+li,
+p,
+p1,
+p2,
+a,
+input {
+  outline: 1px solid blue;
+}
