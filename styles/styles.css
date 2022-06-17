@@ -545,15 +545,15 @@ img {
 }
 
 .advantages-item-farm {
-  background-image: url("../images/items/icon_ice.svg");
+  background-image: url("../images/items/icon_cow.svg");
 }
 
 .advantages-item-quality {
-  background-image: url("../images/items/icon_ice.svg");
+  background-image: url("../images/items/icon_leaf.svg");
 }
 
 .advantages-item-pack {
-  background-image: url("../images/items/icon_ice.svg");
+  background-image: url("../images/items/icon_thermometer.svg");
 }
 
 .promo {
@@ -590,7 +590,6 @@ img {
 
 .subscribe {
   padding: 6px;
-
   background-image: url("../images/post.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -599,7 +598,6 @@ img {
 
 .subscribe-container {
   padding: 26px 26px 28px;
-
   background-color: #ffffff;
   border-radius: 16px;
 }
