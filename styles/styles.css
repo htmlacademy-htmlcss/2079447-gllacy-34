@@ -272,10 +272,6 @@ img {
   height: 312px;
 }
 
-.slider-control {
-  position: relative
-}
-
 
 .slider-navigation-arrow {
   position: absolute;
@@ -344,12 +340,6 @@ img {
   border: none;
   border-radius: 50%;
   outline: 2px solid rgba(252, 252, 252, 0.3);
-}
-
-.social-link img {
-  display: block;
-  width: 100%;
-  height: 100%;
 }
 
 .social-link img {
