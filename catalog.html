@@ -31,13 +31,13 @@
       <a class="navigation-phone" href="tel:78005558628">+7 800 555-86-28</a>
       <ul class="navigation-user list-reset">
         <li class="navigation-user-item">
-          <a class="navigation-user-link" href="#"><span class="visually-hidden">Поиск</span></a>
+          <a class="navigation-user-link navigation-user-link-search" href="#"><span class="visually-hidden">Поиск</span></a>
         </li>
         <li class="navigation-user-item">
-          <a class="navigation-user-link" href="#">Вход</a>
+          <a class="navigation-user-link navigation-user-link-login" href="#">Вход</a>
         </li>
         <li class="navigation-user-item">
-          <a class="navigation-user-link" href="#">2 товара</a>
+          <a class="navigation-user-link navigation-user-link-card" href="#">2 товара</a>
         </li>
       </ul>
     </nav>
@@ -55,9 +55,9 @@
       </ul>
       <h1 class="title-section">Сливочное мороженое</h1>
     </section>
-    <section class="catalog-products">
+    <section class="filter">
       <h2 class="visually-hidden">Список товаров с фильтрами</h2>
-      <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+      <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Сортировка:</legend>
           <select name="catalog-group">
@@ -139,8 +139,7 @@
         <button class="button" type="submit">Применить</button>
       </form>
     </section>
-
-    <section class="catalog">
+    <section class="catalog catalog-full">
       <h3 class="visually-hidden">Попробуйте самые популярные вкусы нашего мороженого</h3>
       <ul class="catalog-list list-reset">
         <li class="catalog-item">
@@ -149,7 +148,7 @@
               <img src="images/catalog/raspberry.jpg" width="168" height="168" alt="Мороженое Малинка.">
             </div>
             <h2 class="catalog-title">Малинка</h2>
-            <p class="catalog-descript">Сливочное мороженое с малиновым джемом</p>
+            <p class="catalog-descript">Сливочное мороженое<br> с малиновым джемом</p>
             <div class="catalog-card-wrapper">
               <span class="catalog-price">310 ₽/кг</span>
               <a class="catalog-card" href="#">
@@ -164,7 +163,7 @@
               <img src="images/catalog/pistachio.jpg" width="168" height="168" alt="Мороженое Фисташка.">
             </div>
             <h2 class="catalog-title">Фисташка</h2>
-            <p class="catalog-descript">Фисташковый пломбир с кусочками шоколада</p>
+            <p class="catalog-descript">Фисташковый пломбир<br> с кусочками шоколада</p>
             <div class="catalog-card-wrapper">
               <span class="catalog-price">340 ₽/кг</span>
               <a class="catalog-card" href="#">
@@ -179,7 +178,7 @@
               <img src="images/catalog/blueberry.jpg" width="168" height="168" alt="Мороженое Черника.">
             </div>
             <h2 class="catalog-title">Черника</h2>
-            <p class="catalog-descript">Крем-брюле с черничным джемом</p>
+            <p class="catalog-descript">Крем-брюле<br> с черничным джемом</p>
             <div class="catalog-card-wrapper">
               <span class="catalog-price">330 ₽/кг</span>
               <a class="catalog-card" href="#">
@@ -194,7 +193,7 @@
               <img src="images/catalog/bubble_gum.jpg" width="168" height="168" alt="Мороженое Бабл-гам.">
             </div>
             <h2 class="catalog-title">Бабл-гам</h2>
-            <p class="catalog-descript">Ванильный пломбир со сладкой посыпкой</p>
+            <p class="catalog-descript">Ванильный пломбир<br> со сладкой посыпкой</p>
             <div class="catalog-card-wrapper">
               <span class="catalog-price">320 ₽/кг</span>
               <a class="catalog-card" href="#">
@@ -209,7 +208,7 @@
               <img src="images/catalog/blackberry.jpg" width="168" height="168" alt="Мороженое Ежевика.">
             </div>
             <h2 class="catalog-title">Ежевика</h2>
-            <p class="catalog-descript">Сливочное мороженое с ежевичным джемом</p>
+            <p class="catalog-descript">Сливочное мороженое<br> с ежевичным джемом</p>
             <div class="catalog-card-wrapper">
               <span class="catalog-price">330 ₽/кг</span>
               <a class="catalog-card" href="#">
@@ -224,7 +223,7 @@
               <img src="images/catalog/bananas.jpg" width="168" height="168" alt="Мороженое Банан.">
             </div>
             <h2 class="catalog-title">Банан</h2>
-            <p class="catalog-descript">Сливочный пломбир с банановым вкусом</p>
+            <p class="catalog-descript">Сливочный пломбир<br> с банановым вкусом</p>
             <div class="catalog-card-wrapper">
               <span class="catalog-price">340 ₽/кг</span>
               <a class="catalog-card" href="#">
@@ -239,7 +238,7 @@
               <img src="images/catalog/chocolate.jpg" width="168" height="168" alt="Мороженое Шоколадка.">
             </div>
             <h2 class="catalog-title">Шоколадка</h2>
-            <p class="catalog-descript">Классический шоколадный пломбир</p>
+            <p class="catalog-descript">Классический<br> шоколадный пломбир</p>
             <div class="catalog-card-wrapper">
               <span class="catalog-price">270 ₽/кг</span>
               <a class="catalog-card" href="#">
@@ -254,8 +253,7 @@
               <img src="images/catalog/strawberry.jpg" width="168" height="168" alt="Мороженое Клубничка.">
             </div>
             <h2 class="catalog-title">Клубничка</h2>
-            <p class="catalog-descript">Сливочный пломбир
-              с клубничным вкусом</p>
+            <p class="catalog-descript">Сливочный пломбир <br>с клубничным вкусом</p>
             <div class="catalog-card-wrapper">
               <span class="catalog-price">300 ₽/кг</span>
               <a class="catalog-card" href="#">
@@ -270,7 +268,7 @@
               <img src="images/catalog/lemon.jpg" width="168" height="168" alt="Мороженое Лимон.">
             </div>
             <h2 class="catalog-title">Лимон</h2>
-            <p class="catalog-descript">Освежающий лимонный сорбет</p>
+            <p class="catalog-descript">Освежающий<br> лимонный сорбет</p>
             <div class="catalog-card-wrapper">
               <span class="catalog-price">310 ₽/кг</span>
               <a class="catalog-card" href="#">
@@ -285,7 +283,7 @@
               <img src="images/catalog/menthol.jpg" width="168" height="168" alt="Мороженое Ментол.">
             </div>
             <h2 class="catalog-title">Ментол</h2>
-            <p class="catalog-descript">Сливочный пломбир с ментоловым сиропом</p>
+            <p class="catalog-descript">Сливочный пломбир<br> с ментоловым сиропом</p>
             <div class="catalog-card-wrapper">
               <span class="catalog-price">320 ₽/кг</span>
               <a class="catalog-card" href="#">
@@ -300,7 +298,7 @@
               <img src="images/catalog/nut.jpg" width="168" height="168" alt="Мороженое орешек.">
             </div>
             <h2 class="catalog-title">Орешек</h2>
-            <p class="catalog-descript">Фисташковый пломбир с шоколадным сиропом</p>
+            <p class="catalog-descript">Фисташковый пломбир<br> с шоколадным сиропом</p>
             <div class="catalog-card-wrapper">
               <span class="catalog-price">360 ₽/кг</span>
               <a class="catalog-card" href="#">
@@ -315,7 +313,7 @@
               <img src="images/catalog/creme_brulee.jpg" width="168" height="168" alt="Мороженое Крем-брюле.">
             </div>
             <h2 class="catalog-title">Крем-брюле</h2>
-            <p class="catalog-descript">Классическое крем-брюле</p>
+            <p class="catalog-descript">Классическое<br> крем-брюле</p>
             <div class="catalog-card-wrapper">
               <span class="catalog-price">280 ₽/кг</span>
               <a class="catalog-card" href="#">

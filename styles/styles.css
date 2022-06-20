@@ -296,9 +296,6 @@ img {
   color: #FCFCFC;
 }
 
-.slider-thumbnail-item-container {
-  opacity: 0.4;
-}
 
 .slider-bullet {
   width: 12px;
@@ -363,6 +360,11 @@ img {
 
 .gift {
   padding: 45px 0;
+}
+
+.gift-title {
+  width: 434px;
+  margin: 0 auto 53px;
 }
 
 .gift-container {
