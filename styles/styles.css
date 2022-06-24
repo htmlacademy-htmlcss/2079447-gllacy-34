@@ -124,6 +124,7 @@ img {
 
 .navigation-user-link {
   display: block;
+  position: relative;
   padding: 8px 16px 8px 40px;
   margin-left: 15px;
   line-height: 20px;
@@ -143,6 +144,36 @@ img {
   margin-left: 0;
   padding: 0;
   border-radius: 50%;
+}
+
+.navigation-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #000000;
+}
+
+.navigation-user-link-login {
+  padding-left: 38px;
+}
+
+.navigation-user-link-login .navigation-icon {
+  right: auto;
+  left: 16px;
+  margin: auto 0;
+}
+
+.navigation-user-link-card {
+  padding-left: 38px;
+}
+
+.navigation-user-link-card .navigation-icon {
+  right: auto;
+  left: 16px;
+  margin: auto 0;
 }
 
 .main {
@@ -282,6 +313,7 @@ img {
   display: flex;
   justify-content: space-between;
   width: 350px;
+
 }
 
 .slider-arrow {
@@ -294,8 +326,18 @@ img {
   border: 2px solid #FCFCFC;
   border-radius: 26px;
   color: #FCFCFC;
+  position: relative;
 }
 
+.arrow-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #FCFCFC;
+}
 
 .slider-bullet {
   width: 12px;
@@ -434,6 +476,7 @@ img {
 
 .catalog-item {
   padding-top: 53px;
+
 }
 
 .catalog-wrapper {
@@ -442,6 +485,7 @@ img {
   text-align: center;
   background-color: #fcfcfc;
   border-radius: 8px;
+
 }
 
 .catalog-img {
@@ -474,6 +518,15 @@ img {
   justify-content: space-between;
   align-items: center;
   margin-top: auto;
+
+}
+
+.catalog-card-wrapper .card-icon {
+  top: 10px;
+  right: 10px;
+  bottom: 13px;
+  left: 9px;
+  margin: auto 0;
 }
 
 .catalog-card {
@@ -486,6 +539,17 @@ img {
   background-color: #ff2f64;
   border: 2px solid transparent;
   border-radius: 50%;
+  position: relative;
+
+}
+
+.card-icon {
+  position: absolute;
+  top: 0;
+  right: auto;
+  bottom: 0;
+  left: 0px;
+  margin: auto;
 }
 
 .catalog-price {
