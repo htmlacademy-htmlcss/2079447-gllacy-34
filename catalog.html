@@ -102,7 +102,7 @@
               xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M1.17.25a.67.67 0 1 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V8.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 12.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z" />
-              </svg>
+            </svg>
             <span>2 товара</span>
           </a>
           <!-- В корзине у тебя будет 2 всплывающего окна, одно с контентом, а второе с текстом о пустой корзине.  -->
@@ -139,6 +139,25 @@
 
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Цена: 100 ₽ – 500 ₽</legend>
+          <div class="range-scale">
+            <div class="range-bar" style="left:46px; width:164px">
+              <button class="range-toggle togle-min">
+                <span class="visually-hidden">Изменить минимальную цену</span>
+              </button>
+              <button class="range-toggle toggle-max">
+                <span class="visually-hidden">Изменить максимальную цену</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="range-wrapper-inputs">
+            <label class="catalog-filter-label">
+              <input class="range-input" type="number" value="100" name="min-price">
+            </label>
+            <label class="catalog-filter-label">
+              <input class="range-input" type="number" value="500" name="max-price" style="width: 46px">
+            </label>
+          </div>
         </fieldset>
 
 

@@ -99,9 +99,46 @@
             </svg>
             <span>2 товара</span>
           </a>
-          <!-- В корзине у тебя будет 2 всплывающего окна, одно с контентом, а второе с текстом о пустой корзине.  -->
-        </li>
-      </ul>
+
+          <div class="popover popover-cart popover-open">
+            <div class="popover-content">
+              <h2 class="popover-title">Корзина</h2>
+              <ul class="cart-items-list list-reset">
+                <li class="cart-item">
+                  <p class="cart-item-title">Малинка</p>
+                  <img src="images/catalog/raspberry.jpg" width="46" height="46" alt="Мороженое Малинка.">
+                  <span class="cart-item-price-for-kg">1 кг х 310 ₽</span>
+                  <p class="cart-item-price">310 ₽</p>
+                  <button type="button" class="cart-item-button button">
+                    <svg aria-hidden="true" focusable="false" width="10" height="10" fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M9.8 1.14A.67.67 0 1 0 8.86.2L5 4.06 1.14.2a.67.67 0 1 0-.94.94L4.06 5 .2 8.86a.67.67 0 0 0 .94.94L5 5.94 8.86 9.8a.67.67 0 1 0 .94-.94L5.94 5 9.8 1.14Z"
+                        fill="#2D3440" /></svg>
+                  </button>
+                </li>
+                <li class="cart-item">
+                  <p class="cart-item-title">Бабл-гам</p>
+                  <img src="images/catalog/bubble_gum.jpg" width="46" height="46" alt="Мороженое Малинка.">
+                  <span class="cart-item-price-for-kg">1 кг х 320 ₽</span>
+                  <p class="cart-item-price">320 ₽</p>
+                  <button type="button" class="cart-item-button button">
+                    <svg aria-hidden="true" focusable="false" width="10" height="10" fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M9.8 1.14A.67.67 0 1 0 8.86.2L5 4.06 1.14.2a.67.67 0 1 0-.94.94L4.06 5 .2 8.86a.67.67 0 0 0 .94.94L5 5.94 8.86 9.8a.67.67 0 1 0 .94-.94L5.94 5 9.8 1.14Z"
+                        fill="#2D3440" /></svg>
+                  </button>
+                </li>
+              </ul>
+              <button class="button button-other" type="submit">Оформить заказ</button>
+              <span class="total-price">Итого 790 ₽</span>
+            </div>
+          </div>
+          <div class="popover-content-empty">
+            <span class="cart-item-empty">Ваша корзина пока пуста</span>
+          </div>
+
     </nav>
   </header>
   <main class="main">
