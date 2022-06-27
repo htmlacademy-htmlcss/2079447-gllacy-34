@@ -137,29 +137,29 @@
           </select>
         </fieldset>
 
-        <fieldset class="catalog-filter-group">
-          <legend class="catalog-filter-title">Цена: 100 ₽ – 500 ₽</legend>
-          <div class="range-scale">
-            <div class="range-bar" style="left:46px; width:164px">
-              <button class="range-toggle togle-min">
-                <span class="visually-hidden">Изменить минимальную цену</span>
-              </button>
-              <button class="range-toggle toggle-max">
-                <span class="visually-hidden">Изменить максимальную цену</span>
-              </button>
+        <fieldset class="filter-fieldset filter-fieldset-range">
+          <div class="range-wrapper-inputs filter-title">
+            <label class="filter-label">
+                        Цена: <input class="range-input range-input-min" type="number" value="100" name="min-price"> ₽
+            </label>
+            <span> – </span>
+            <label class="filter-label">
+               <input class="range-input range-input-max" type="number" value="500" name="max-price"> ₽
+            </label>
+          </div>
+          <div class="range">
+            <div class="range-scale">
+              <div class="range-bar">
+                <button class="range-toggle range-toggle-min" type="button">
+                  <span class="visually-hidden">Изменить минимальную цену.</span>
+                </button>
+                <button class="range-toggle range-toggle-max" type="button">
+                  <span class="visually-hidden">Изменить максимальную цену.</span>
+                </button>
+              </div>
             </div>
           </div>
-
-          <div class="range-wrapper-inputs">
-            <label class="catalog-filter-label">
-              <input class="range-input" type="number" value="100" name="min-price">
-            </label>
-            <label class="catalog-filter-label">
-              <input class="range-input" type="number" value="500" name="max-price" style="width: 46px">
-            </label>
-          </div>
         </fieldset>
-
 
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Жирность:</legend>
