@@ -129,22 +129,22 @@
       <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Сортировка:</legend>
-          <select name="catalog-group">
-            <option value="popular">По популярности</option>
+          <select class="catalog-filter-select">
+            <option value="popular" selected>По популярности</option>
             <option value="cheap">Сначала недорогие</option>
             <option value="expensive">Сначала дорогие</option>
             <option value="fatness">По жирности</option>
           </select>
         </fieldset>
 
-        <fieldset class="filter-fieldset filter-fieldset-range">
+        <fieldset class="catalog-filter-group catalog-filter-group-range">
           <div class="range-wrapper-inputs filter-title">
-            <label class="filter-label">
-                        Цена: <input class="range-input range-input-min" type="number" value="100" name="min-price"> ₽
+            <label class="catalog-filter-title">
+              Цена: <input class="range-input range-input-min" type="number" value="100" name="min-price"> ₽
             </label>
             <span> – </span>
-            <label class="filter-label">
-               <input class="range-input range-input-max" type="number" value="500" name="max-price"> ₽
+            <label class="catalog-filter-title">
+              <input class="range-input range-input-max" type="number" value="500" name="max-price"> ₽
             </label>
           </div>
           <div class="range">

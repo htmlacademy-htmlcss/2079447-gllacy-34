@@ -100,49 +100,59 @@
             <span>2 товара</span>
           </a>
 
-          <div class="popover popover-cart popover-open">
+          <div class="popover popover-cart">
             <div class="popover-content">
               <h2 class="popover-title">Корзина</h2>
+
               <ul class="cart-items-list list-reset">
                 <li class="cart-item">
-                  <div class="popover-img">
-                    <img src="images/catalog/raspberry.jpg" width="46" height="46" alt="Мороженое Малинка."></div>
-                  <p class="cart-item-title">Малинка</p>
-
-                  <span class="cart-item-price-for-kg">1 кг х 310 ₽</span>
+                  <div class="cart-img">
+                    <img src="images/catalog/raspberry.jpg" width="46" height="46" alt="Мороженое Малинка.">
+                  </div>
+                  <div class="card-title-container">
+                    <a class="cart-item-title" href="#">Малинка</a>
+                    <span class="cart-item-descript">1 кг х 310 ₽</span>
+                  </div>
                   <p class="cart-item-price">310 ₽</p>
-                  <button type="button" class="cart-item-button button">
+                  <button type="button" class="cart-item-button">
                     <svg aria-hidden="true" focusable="false" width="10" height="10" fill="currentColor"
                       xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M9.8 1.14A.67.67 0 1 0 8.86.2L5 4.06 1.14.2a.67.67 0 1 0-.94.94L4.06 5 .2 8.86a.67.67 0 0 0 .94.94L5 5.94 8.86 9.8a.67.67 0 1 0 .94-.94L5.94 5 9.8 1.14Z"
-                        fill="#2D3440" /></svg>
+                        d="M9.8 1.14A.67.67 0 1 0 8.86.2L5 4.06 1.14.2a.67.67 0 1 0-.94.94L4.06 5 .2 8.86a.67.67 0 0 0 .94.94L5 5.94 8.86 9.8a.67.67 0 1 0 .94-.94L5.94 5 9.8 1.14Z" />
+                    </svg>
                   </button>
                 </li>
-                <li class="cart-item">
-                  <div class="popover-img">
-                    <img src="images/catalog/bubble_gum.jpg" width="46" height="46" alt="Мороженое Малинка."></div>
-                  <p class="cart-item-title">Бабл-гам</p>
 
-                  <span class="cart-item-price-for-kg">1 кг х 320 ₽</span>
+                <li class="cart-item">
+                  <div class="cart-img">
+                    <img src="images/catalog/bubble_gum.jpg" width="46" height="46" alt="Мороженое Малинка.">
+                  </div>
+                  <div class="card-title-container">
+                    <a class="cart-item-title" href="#">Бабл-гам</a>
+                    <span class="cart-item-descript">1 кг х 320 ₽</span>
+                  </div>
                   <p class="cart-item-price">320 ₽</p>
-                  <button type="button" class="cart-item-button button">
+                  <button type="button" class="cart-item-button">
                     <svg aria-hidden="true" focusable="false" width="10" height="10" fill="currentColor"
                       xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M9.8 1.14A.67.67 0 1 0 8.86.2L5 4.06 1.14.2a.67.67 0 1 0-.94.94L4.06 5 .2 8.86a.67.67 0 0 0 .94.94L5 5.94 8.86 9.8a.67.67 0 1 0 .94-.94L5.94 5 9.8 1.14Z"
-                        fill="#2D3440" /></svg>
+                        d="M9.8 1.14A.67.67 0 1 0 8.86.2L5 4.06 1.14.2a.67.67 0 1 0-.94.94L4.06 5 .2 8.86a.67.67 0 0 0 .94.94L5 5.94 8.86 9.8a.67.67 0 1 0 .94-.94L5.94 5 9.8 1.14Z" />
+                    </svg>
                   </button>
                 </li>
               </ul>
-              <button class="button button-other" type="submit">Оформить заказ</button>
-              <span class="total-price">Итого 790 ₽</span>
+              <div class="card-wrapper">
+                <button class="button button-other" type="submit">Оформить заказ</button>
+                <span class="total-price">Итого 790 ₽</span>
+              </div>
             </div>
           </div>
+          <!-- popover-content-empty-open - открывает блок popover-content-empty -->
           <div class="popover-content-empty">
             <span class="cart-item-empty">Ваша корзина пока пуста</span>
           </div>
-
+        </li>
+      </ul>
     </nav>
   </header>
   <main class="main">
@@ -400,21 +410,35 @@
       <div class="feedback">
         <p>Укажите адрес и дату доставки, и мы свяжемся с&nbsp;вами, чтобы подтвердить заказ.</p>
         <form class="delivery-form" action="https://echo.htmlacademy" method="post">
-          <p class="delivery-form-container delivery-form-date">
-            <label class="form-label" for="delivery-date">Дата</label>
-            <input class="form-input" id="delivery-date" name="delivery-date" type="text" placeholder="01.04.2020">
-          </p>
-
-          <p class="delivery-form-container delivery-form-phone">
-            <label class="form-label" for="delivery-phone">Телефон</label>
-            <input class="form-input" id="delivery-phone" name="delivery-phone" type="tel"
-              placeholder="+7 800 999-00-00">
-          </p>
-
-          <p class="delivery-form-container delivery-form-address">
-            <label class="form-label" for="delivery-address">Адрес</label>
-            <textarea class="form-input" id="delivery-address" placeholder="ул. Большая Конюшенная, 19/8"></textarea>
-          </p>
+          <div class="delivery-form-container delivery-form-container-data">
+            <div class="delivery-form-tooltip">
+              <label class="delivery-form-label" for="form-delivery-data">Дата</label>
+              <div class="delivery-tooltip">
+                <button class="delivery-tooltip-toggle" type="button" aria-labelledby="info-label-date">
+                  <span class="visually-hidden">Дополнительная информация</span>
+                </button>
+                <p class="delivery-tooltip-text" id="info-label-date">Введите дату доставки</p>
+              </div>
+            </div>
+            <input class="form-input" type="text" id="form-delivery-data" placeholder="01.04.2020">
+          </div>
+          <div class="delivery-form-container delivery-form-container-tel">
+            <label class="delivery-form-label" for="form-delivery-tel">Телефон</label>
+            <input class="form-input" type="tel" id="form-delivery-tel" placeholder="+7 800 999-00-00">
+          </div>
+          <div class="delivery-form-container delivery-form-container-address">
+            <div class="delivery-form-tooltip">
+              <label class="delivery-form-label" for="form-delivery-address">Адрес</label>
+              <div class="delivery-tooltip">
+                <button class="delivery-tooltip-toggle" type="button" aria-labelledby="info-label-address">
+                  <span class="visually-hidden">Дополнительная информация</span>
+                </button>
+                <p class="delivery-tooltip-text" id="info-label-address">Введите адрес доставки</p>
+              </div>
+            </div>
+            <textarea class="form-input" id="form-delivery-address"
+              placeholder="ул. Большая Конюшенная, 19/8"></textarea>
+          </div>
           <button class="button button-other" type="submit">Отправить</button>
         </form>
       </div>
@@ -428,7 +452,7 @@
         <p class="contacts-text">Для заказов по телефону:</p>
         <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         <p class="contacts-text-small"> (с 10 до 20 ежедневно)</p>
-        <a class="button button-other">Форма обратной связи</a>
+        <a class="button button-other contacts-button">Форма обратной связи</a>
       </div>
     </section>
   </main>
@@ -495,6 +519,26 @@
     </div>
 
   </footer>
+
+  <!-- класс modal-container-open открывает модальное окно -->
+  <div class="modal-container modal-container-open">
+    <div class="modal modal-auth">
+      <button class="modal-close-button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <h2 class="modal-title">Мы обязательно ответим вам!</h2>
+      <section class="modal-content">
+        <form class="modal-form" action="https://echo.htmlacademy" method="post">
+          <label class="visually-hidden" for="form-delivery-data">B Name</label>
+          <input class="form-input" type="text" id="form-delivery-data" placeholder="01.04.2020">
+          <label class="visually-hidden" for="form-delivery-tel">Телефон</label>
+          <input class="form-input" type="email" id="form-delivery-tel" placeholder="+7 800 999-00-00">
+          <textarea class="form-input" placeholder="ул. Большая Конюшенная, 19/8"></textarea>
+          <button class="button button-other" type="submit">Отправить</button>
+        </form>
+      </section>
+    </div>
+  </div>
 
   <!-- Что бы наглядно увидеть работу всплывающих менюшек -->
   <script src="js/script.js"></script>
