@@ -10,7 +10,6 @@
 
 <body>
 
-
   <header class="header">
     <nav class="navigation">
       <div class="logo">
@@ -19,7 +18,6 @@
       <ul class="navigation-list list-reset">
         <li class="navigation-item">
           <a class="navigation-link navigation-link-drop" href="catalog.html">Каталог</a>
-
           <div class="navigation-list-drop">
             <h3 class="navigation-drop-title">Новинки</h3>
             <ul class="navigation-drop-list list-reset">
@@ -49,7 +47,6 @@
       <ul class="navigation-user list-reset">
         <li class="navigation-user-item">
           <a class="navigation-user-link navigation-user-link-search" href="#">
-
             <svg aria-hidden="true" focusable="false" width="14" height="14" fill="currentColor"
               xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -67,13 +64,11 @@
         </li>
         <li class="navigation-user-item">
           <a class="navigation-user-link navigation-user-link-login" href="#">
-
             <svg aria-hidden="true" focusable="false" width="14" height="15" fill="currentColor"
               xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M8 .67C8 .3 8.3 0 8.67 0h2.66a2 2 0 0 1 2 2v9.33a2 2 0 0 1-2 2H8.67a.67.67 0 1 1 0-1.33h2.66a.67.67 0 0 0 .67-.67V2a.67.67 0 0 0-.67-.67H8.67A.67.67 0 0 1 8 .67Zm-3.14 2.2a.67.67 0 0 1 .94 0l3.33 3.32a.67.67 0 0 1 .2.48.66.66 0 0 1-.2.47L5.8 10.47a.67.67 0 1 1-.94-.94l2.2-2.2H.66A.67.67 0 1 1 .67 6h6.4l-2.2-2.2a.67.67 0 0 1 0-.94Z" />
             </svg>
-
             <span>Вход</span>
           </a>
           <div class="navigation-user-container login">
@@ -97,7 +92,6 @@
         </li>
         <li class="navigation-user-item">
           <a class="navigation-user-link navigation-user-link-card" href="#">
-
             <svg aria-hidden="true" focusable="false" width="16" height="16" fill="currentColor"
               xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -105,7 +99,58 @@
             </svg>
             <span>2 товара</span>
           </a>
-          <!-- В корзине у тебя будет 2 всплывающего окна, одно с контентом, а второе с текстом о пустой корзине.  -->
+
+          <div class="popover popover-cart">
+            <div class="popover-content">
+              <h2 class="popover-title">Корзина</h2>
+
+              <ul class="cart-items-list list-reset">
+                <li class="cart-item">
+                  <div class="cart-img">
+                    <img src="images/catalog/raspberry.jpg" width="46" height="46" alt="Мороженое Малинка.">
+                  </div>
+                  <div class="card-title-container">
+                    <a class="cart-item-title" href="#">Малинка</a>
+                    <span class="cart-item-descript">1 кг х 310 ₽</span>
+                  </div>
+                  <p class="cart-item-price">310 ₽</p>
+                  <button type="button" class="cart-item-button">
+                    <svg aria-hidden="true" focusable="false" width="10" height="10" fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M9.8 1.14A.67.67 0 1 0 8.86.2L5 4.06 1.14.2a.67.67 0 1 0-.94.94L4.06 5 .2 8.86a.67.67 0 0 0 .94.94L5 5.94 8.86 9.8a.67.67 0 1 0 .94-.94L5.94 5 9.8 1.14Z" />
+                    </svg>
+                  </button>
+                </li>
+
+                <li class="cart-item">
+                  <div class="cart-img">
+                    <img src="images/catalog/bubble_gum.jpg" width="46" height="46" alt="Мороженое Малинка.">
+                  </div>
+                  <div class="card-title-container">
+                    <a class="cart-item-title" href="#">Бабл-гам</a>
+                    <span class="cart-item-descript">1 кг х 320 ₽</span>
+                  </div>
+                  <p class="cart-item-price">320 ₽</p>
+                  <button type="button" class="cart-item-button">
+                    <svg aria-hidden="true" focusable="false" width="10" height="10" fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M9.8 1.14A.67.67 0 1 0 8.86.2L5 4.06 1.14.2a.67.67 0 1 0-.94.94L4.06 5 .2 8.86a.67.67 0 0 0 .94.94L5 5.94 8.86 9.8a.67.67 0 1 0 .94-.94L5.94 5 9.8 1.14Z" />
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+              <div class="card-wrapper">
+                <button class="button button-other" type="submit">Оформить заказ</button>
+                <span class="total-price">Итого 790 ₽</span>
+              </div>
+            </div>
+          </div>
+          <!-- popover-content-empty-open - открывает блок popover-content-empty -->
+          <div class="popover-content-empty">
+            <span class="cart-item-empty">Ваша корзина пока пуста</span>
+          </div>
         </li>
       </ul>
     </nav>
@@ -119,7 +164,7 @@
           <a class="breadcrumbs-link" href="index.html">Главная</a>
         </li>
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link" href="#">Каталог</a>
+          <a class="breadcrumbs-link breadcrumbs-link-current" href="#">Каталог</a>
         </li>
       </ul>
       <h1 class="title-section">Сливочное мороженое</h1>
@@ -594,8 +639,6 @@
     </div>
 
   </footer>
-
-  <!-- Добавь подключение скрипта -->
   <script src="js/script.js"></script>
 </body>
 
