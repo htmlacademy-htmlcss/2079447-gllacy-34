@@ -211,6 +211,15 @@ img {
   text-decoration: none;
 }
 
+.navigation-phone:hover,
+.navigation-phone:focus {
+  text-decoration: underline;
+}
+
+.navigation-phone:active {
+  opacity: 0.5;
+}
+
 .navigation-user-link span {
   margin-left: 9px;
 }
@@ -663,6 +672,26 @@ img {
   transform: rotate(-180deg);
 }
 
+.slider-arrow:hover {
+  background-color: #FCFCFC;
+  fill: #2D3440;
+}
+
+.slider-arrow:focus {
+  background: rgba(252, 252, 252, 0.3);
+  border: 2px solid #2D3440;
+}
+
+.slider-arrow:active {
+  background: rgba(252, 252, 252, 0.5);
+}
+
+.slider-arrow:disabled {
+  background: rgba(252, 252, 252, 0.3);
+  opacity: 0.4;
+  border: 2px solid #FCFCFC;
+}
+
 .arrow-icon {
   position: absolute;
   top: 0;
@@ -694,12 +723,12 @@ img {
   border: 1px solid #2D3440;
 }
 
-.slider-bullet-active {
-  opacity: 0.5;
+.slider-bullet:active {
+  background: rgba(252, 252, 252, 0.5);
 }
 
-.slider-bullet:current {
-  background-color: #FCFCFC;
+.slider-bullet-active {
+  background: #FCFCFC;
 }
 
 .slider-social {
@@ -1141,7 +1170,6 @@ img {
   border-top: none;
   border-right: none;
   transform: rotate(45deg);
-
 }
 
 .delivery-tooltip-toggle:hover~.delivery-tooltip-text {
@@ -1266,7 +1294,7 @@ img {
 }
 
 .catalog-filter-select:focus {
-  background: #FCFCFC;
+  background-color: #FCFCFC;
   opacity: 0.4;
 }
 
@@ -1607,22 +1635,27 @@ img {
   color: rgba(45, 52, 64, 0.3);
 }
 
-.pagination-item:hover {
-  background: rgba(252, 252, 252, 0.5);
+.pagination-link:hover {
+  background-color: rgba(252, 252, 252, 0.5);
   border-radius: 50px;
 }
 
-.pagination-item:active {
-  background: rgba(252, 252, 252, 0.5);
+.pagination-link:focus {
+  background-color: rgba(252, 252, 252, 0.3);
+  border: 1px solid #2D3440;
+  border-radius: 50px;
+}
+
+.pagination-link:active {
+  background-color: rgba(252, 252, 252, 0.5);
   border: 1px solid #FCFCFC;
   border-radius: 50px;
 }
 
-.pagination-item:focus {
-  background: rgba(252, 252, 252, 0.3);
-  border: 1px solid #2D3440;
-  border-radius: 50px;
+.pagination-link:current {
+  background-color: #FCFCFC;
 }
+
 
 .page-footer {
   display: flex;
