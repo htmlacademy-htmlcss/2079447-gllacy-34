@@ -211,6 +211,15 @@ img {
   text-decoration: none;
 }
 
+.navigation-phone:hover,
+.navigation-phone:focus {
+  text-decoration: underline;
+}
+
+.navigation-phone:active {
+  opacity: 0.5;
+}
+
 .navigation-user-link span {
   margin-left: 9px;
 }
@@ -663,6 +672,26 @@ img {
   transform: rotate(-180deg);
 }
 
+.slider-arrow:hover {
+  background-color: #FCFCFC;
+  fill: #2D3440;
+}
+
+.slider-arrow:focus {
+  background: rgba(252, 252, 252, 0.3);
+  border: 2px solid #2D3440;
+}
+
+.slider-arrow:active {
+  background: rgba(252, 252, 252, 0.5);
+}
+
+.slider-arrow:disabled {
+  background: rgba(252, 252, 252, 0.3);
+  opacity: 0.4;
+  border: 2px solid #FCFCFC;
+}
+
 .arrow-icon {
   position: absolute;
   top: 0;
@@ -694,12 +723,12 @@ img {
   border: 1px solid #2D3440;
 }
 
-.slider-bullet-active {
-  opacity: 0.5;
+.slider-bullet:active {
+  background: rgba(252, 252, 252, 0.5);
 }
 
-.slider-bullet:current {
-  background-color: #FCFCFC;
+.slider-bullet-active {
+  background: #FCFCFC;
 }
 
 .slider-social {
@@ -1026,6 +1055,26 @@ img {
   border-radius: 4px;
 }
 
+.form-input:hover {
+  color: #2D3440;
+  border: 1px solid #2D3440;
+}
+
+.form-input:focus {
+  background: #FFFFFF;
+  border: 2px solid #2D3440;
+}
+
+.form-input:active {
+  background: #FFFFFF;
+  border: 1px solid #B9B9B9;
+}
+
+.form-input:disabled {
+  background: #E7E7E7;
+  border: 1px solid #B9B9B9;
+}
+
 .delivery {
   display: flex;
   justify-content: space-between;
@@ -1141,7 +1190,6 @@ img {
   border-top: none;
   border-right: none;
   transform: rotate(45deg);
-
 }
 
 .delivery-tooltip-toggle:hover~.delivery-tooltip-text {
@@ -1240,6 +1288,15 @@ img {
   border-bottom: 1px solid #2d3440;
 }
 
+.breadcrumbs-link:hover,
+.breadcrumbs-link:focus {
+  text-decoration: underline;
+}
+
+.breadcrumbs-link:active {
+  opacity: 0.5;
+}
+
 .breadcrumbs .title-section {
   margin: 0;
   text-align: left;
@@ -1265,8 +1322,24 @@ img {
   background-size: 11px 6px;
 }
 
+.catalog-filter-select:hover {
+  background-color: #FCFCFC;
+  opacity: 0.5;
+}
+
 .catalog-filter-select:focus {
-  background: #FCFCFC;
+  background-color: #FCFCFC;
+  opacity: 0.4;
+
+}
+
+.catalog-filter-select:active {
+  background-color: #FCFCFC;
+  opacity: 0.3;
+}
+
+.catalog-filter-select:disabled {
+  background-color: #E7E7E7;
   opacity: 0.4;
 }
 
@@ -1484,11 +1557,13 @@ img {
 }
 
 .catalog-filter-label--radio:disabled::before {
-  border: 1px solid rgba(0, 0, 0, 0.4);
+  border: 1.33333px solid #2D3440;
+  opacity: 0.5;
 }
 
 .catalog-filter-label--radio:disabled::after {
-  background-color: rgba(0, 0, 0, 0.4);
+  border: 1.33333px solid #2D3440;
+  opacity: 0.5;
 }
 
 .catalog-filter-fillers-list {
@@ -1540,6 +1615,7 @@ img {
 }
 
 .catalog-filter-label--check:disabled~.catalog-filter-label--check::after {
+  border: 1.33333px solid #000000;
   background-color: rgba(45, 52, 64, 0.5);
 }
 
@@ -1607,22 +1683,27 @@ img {
   color: rgba(45, 52, 64, 0.3);
 }
 
-.pagination-item:hover {
-  background: rgba(252, 252, 252, 0.5);
+.pagination-link:hover {
+  background-color: rgba(252, 252, 252, 0.5);
   border-radius: 50px;
 }
 
-.pagination-item:active {
-  background: rgba(252, 252, 252, 0.5);
+.pagination-link:focus {
+  background-color: rgba(252, 252, 252, 0.3);
+  border: 1px solid #2D3440;
+  border-radius: 50px;
+}
+
+.pagination-link:active {
+  background-color: rgba(252, 252, 252, 0.5);
   border: 1px solid #FCFCFC;
   border-radius: 50px;
 }
 
-.pagination-item:focus {
-  background: rgba(252, 252, 252, 0.3);
-  border: 1px solid #2D3440;
-  border-radius: 50px;
+.pagination-link:current {
+  background-color: #FCFCFC;
 }
+
 
 .page-footer {
   display: flex;
@@ -1654,6 +1735,15 @@ img {
   text-decoration: none;
 }
 
+.documents-link:hover,
+.documents-link:focus {
+  text-decoration: underline;
+}
+
+.documents-link:active {
+  opacity: 0.5;
+}
+
 .footer-copyright {
   padding: 2px 11px;
 }
@@ -1683,6 +1773,15 @@ img {
 .footer-copyright-text {
   font-size: 12px;
   line-height: 16px;
+}
+
+.footer-copyright-text:hover,
+.footer-copyright-text:focus {
+  text-decoration: underline;
+}
+
+.footer-copyright-text:active {
+  opacity: 0.5;
 }
 
 .footer-copyright-text a {
@@ -1734,6 +1833,22 @@ img {
   background-position: center;
   cursor: pointer;
   border-radius: 4px;
+}
+
+.modal-close-button:hover {
+  color: #b9b9b9;
+}
+
+.modal-close-button:focus {
+  outline: 1px solid #E7E7E7;
+}
+
+.modal-close-button:active {
+  opacity: 0.5;
+}
+
+.modal-close-button:disabled {
+  opacity: 0.3;
 }
 
 .modal-form {
