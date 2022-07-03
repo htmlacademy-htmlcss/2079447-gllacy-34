@@ -656,7 +656,6 @@ img {
 }
 
 .slider-arrow {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -665,32 +664,37 @@ img {
   color: #fcfcfc;
   background-color: rgba(252, 252, 252, 0.3);
   border: 2px solid #fcfcfc;
-  border-radius: 26px;
+  border-radius: 50%;
+}
+
+.slider-arrow:hover {
+  color: #2d3440;
+  background-color: #fcfcfc;
+}
+
+.slider-arrow:focus {
+  color: #2d3440;
+  background-color: rgba(252, 252, 252, 0.3);
+  border: 2px solid #2d3440;
+  outline: none;
+}
+
+.slider-arrow:active {
+  color: #2d3440;
+  background-color: rgba(252, 252, 252, 0.5);
+}
+
+.slider-arrow:disabled {
+  color: #fcfcfc;
+  background: rgba(252, 252, 252, 0.3);
+  border: 2px solid #fcfcfc;
+  opacity: 0.4;
 }
 
 .slider-arrow-prev {
   transform: rotate(-180deg);
 }
 
-.slider-arrow:hover {
-  background-color: #FCFCFC;
-  fill: #2D3440;
-}
-
-.slider-arrow:focus {
-  background: rgba(252, 252, 252, 0.3);
-  border: 2px solid #2D3440;
-}
-
-.slider-arrow:active {
-  background: rgba(252, 252, 252, 0.5);
-}
-
-.slider-arrow:disabled {
-  background: rgba(252, 252, 252, 0.3);
-  opacity: 0.4;
-  border: 2px solid #FCFCFC;
-}
 
 .arrow-icon {
   position: absolute;
@@ -1062,7 +1066,8 @@ img {
 
 .form-input:focus {
   background: #FFFFFF;
-  border: 2px solid #2D3440;
+  border: 1px solid #2d3440;
+  outline: 1px solid #2d3440;
 }
 
 .form-input:active {
@@ -1129,6 +1134,8 @@ img {
 
 .delivery-form textarea {
   padding: 12px 15px;
+  resize: none;
+
 }
 
 .delivery-form .button {
@@ -1323,14 +1330,13 @@ img {
 }
 
 .catalog-filter-select:hover {
-  background-color: #FCFCFC;
-  opacity: 0.5;
+  background-color: rgba(252, 252, 252, 0.5);
 }
 
 .catalog-filter-select:focus {
-  background-color: #FCFCFC;
-  opacity: 0.4;
-
+  background-color: rgba(252, 252, 252, 0.4);
+  border: 2px solid #fcfcfc;
+  outline: none;
 }
 
 .catalog-filter-select:active {
@@ -1339,8 +1345,8 @@ img {
 }
 
 .catalog-filter-select:disabled {
-  background-color: #E7E7E7;
-  opacity: 0.4;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 2px solid rgba(0, 0, 0, 0.4);
 }
 
 .catalog-filter-form {
@@ -1556,14 +1562,12 @@ img {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.catalog-filter-label--radio:disabled::before {
-  border: 1.33333px solid #2D3440;
-  opacity: 0.5;
+.catalog-filter-fat-input:disabled~.filter-label-radio::before {
+  border: 1px solid rgba(0, 0, 0, 0.4);
 }
 
-.catalog-filter-label--radio:disabled::after {
-  border: 1.33333px solid #2D3440;
-  opacity: 0.5;
+.catalog-filter-fat-input:disabled~.filter-label-radio::after {
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .catalog-filter-fillers-list {
@@ -1614,8 +1618,7 @@ img {
   background-color: rgba(45, 52, 64, 0.5);
 }
 
-.catalog-filter-label--check:disabled~.catalog-filter-label--check::after {
-  border: 1.33333px solid #000000;
+.catalog-filter-fillers-input:disabled~.filter-label-check::after {
   background-color: rgba(45, 52, 64, 0.5);
 }
 
@@ -1770,24 +1773,24 @@ img {
   height: 100%;
 }
 
-.footer-copyright-text {
-  font-size: 12px;
-  line-height: 16px;
-}
-
-.footer-copyright-text:hover,
-.footer-copyright-text:focus {
-  text-decoration: underline;
-}
-
-.footer-copyright-text:active {
-  opacity: 0.5;
-}
-
 .footer-copyright-text a {
   color: #2d3440;
   text-decoration: none;
   border-bottom: 1px solid rgba(45, 52, 64, 0.5);
+}
+
+.footer-copyright-text a:hover,
+.footer-copyright-text a:focus {
+  border-bottom: 1px solid #2d3440;
+}
+
+.footer-copyright-text a:active {
+  opacity: 0.5;
+}
+
+.footer-copyright-text {
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .modal-container {
@@ -1824,19 +1827,19 @@ img {
   padding: 0;
   top: 0;
   right: 0;
-  width: 56px;
-  height: 44px;
+  width: 32px;
+  height: 32px;
   background-color: #ffffff;
-  border: none;
+  border: 2px solid transparent;
   background-image: url("../images/icons/cross.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 50%;
 }
 
 .modal-close-button:hover {
-  color: #b9b9b9;
+  border: 2px solid #b9b9b9;
 }
 
 .modal-close-button:focus {
