@@ -90,6 +90,7 @@ img {
 
 .navigation {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   padding: 24px 0;
 }
@@ -514,6 +515,70 @@ img {
   outline: 4px solid rgba(252, 252, 252, 0.4);
 }
 
+/*Для кнопки загрузки*/
+
+/*@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+div {
+  display: flex;
+  min-height: 90vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #feafc3;
+}
+
+.button {
+  position: relative;
+}
+
+.button-loading {
+  padding-right: 56px;
+  pointer-events: none;
+}
+
+.button-loading::before {
+  box-sizing: border-box;
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #242424;
+  opacity: 0.24;
+  right: 32px;
+  border-radius: 50%;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.button-loading::after {
+  box-sizing: border-box;
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: 2px solid currentColor;
+  border-color: #242424 transparent transparent transparent;
+  right: 32px;
+  border-radius: 50%;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  transform: rotate(45deg);
+  animation: spinner 1.2s linear infinite;
+}
+*/
+
+
 .button-other {
   color: #fcfcfc;
   background-color: #ff2f64;
@@ -837,7 +902,6 @@ img {
   padding: 37px 0 80px;
 }
 
-/* Нужно будет подкорректировать верхний паддинг по pixel perfect */
 .catalog-full {
   padding-top: 28px;
   padding-bottom: 25px;
@@ -1316,12 +1380,15 @@ img {
 
 .catalog-filter-select {
   display: block;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  width: 196px;
   background-color: rgba(252, 252, 252, 0.3);
   padding: 10px;
   border-radius: 20px;
   border: 2px solid transparent;
-  -moz-appearance: none;
-  -webkit-appearance: none;
   appearance: none;
   background-image: url("../images/icons/down.svg");
   background-repeat: no-repeat;
@@ -1358,12 +1425,24 @@ img {
 .catalog-filter-group {
   display: flex;
   flex-direction: column;
-  margin: 0 24px 15px 0;
+  margin: -2px 24px 15px 0;
   padding: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   border: none;
+}
+
+.catalog-filter .button {
+  margin-left: -8px;
+  margin-bottom: -2px;
+  width: 185px;
+  padding: 7px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  background: rgba(252, 252, 252, 0.3);
+  outline: 2px solid #FCFCFC;
 }
 
 .range-wrapper-inputs {
@@ -1625,6 +1704,7 @@ img {
 .pagination {
   position: relative;
   display: flex;
+  /* flex-wrap: wrap; на переполнение не срабатывает...не знаю как это исправить */
   justify-content: center;
   align-items: center;
   padding: 58px 0 58px;
@@ -1633,6 +1713,8 @@ img {
 .pagination .button {
   width: 179px;
   margin: 0 auto;
+  padding-left: 0px;
+  padding-top: 6px;
 }
 
 .pagination-container {
