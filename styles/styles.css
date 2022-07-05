@@ -1671,6 +1671,15 @@ div {
   background-color: #fcfcfc;
 }
 
+.catalog-filter-fillers-list {
+  display: grid;
+  padding: 11px 24px 9px;
+  background: rgba(252, 252, 252, 0.3);
+  border-radius: 18px;
+  gap: 16px;
+  grid-template-columns: repeat(5, auto);
+}
+
 .catalog-filter-fillers-input:focus~.catalog-filter-label-check::after {
   background-color: #fcfcfc;
 }
@@ -1690,7 +1699,6 @@ div {
 .pagination {
   position: relative;
   display: flex;
-  /* flex-wrap: wrap; на переполнение не срабатывает...не знаю как это исправить */
   justify-content: center;
   align-items: center;
   padding: 58px 0 58px;
