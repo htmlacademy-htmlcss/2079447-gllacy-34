@@ -525,7 +525,6 @@ img {
     transform: rotate(360deg);
   }
 }
-
 div {
   display: flex;
   min-height: 90vh;
@@ -533,16 +532,13 @@ div {
   align-items: center;
   background-color: #feafc3;
 }
-
 .button {
   position: relative;
 }
-
 .button-loading {
   padding-right: 56px;
   pointer-events: none;
 }
-
 .button-loading::before {
   box-sizing: border-box;
   content: "";
@@ -558,7 +554,6 @@ div {
   margin-top: auto;
   margin-bottom: auto;
 }
-
 .button-loading::after {
   box-sizing: border-box;
   content: "";
@@ -1580,18 +1575,18 @@ div {
   position: relative;
 }
 
-.catalog-filter-label--radio {
+.catalog-filter-label-radio {
   padding-left: 25px;
 }
 
-.catalog-filter-label--radio::before,
-.catalog-filter-label--radio::after {
+.catalog-filter-label-radio::before,
+.catalog-filter-label-radio::after {
   content: "";
   position: absolute;
   border-radius: 50%;
 }
 
-.catalog-filter-label--radio::before {
+.catalog-filter-label-radio::before {
   top: 0;
   left: 0;
   width: 16px;
@@ -1600,7 +1595,7 @@ div {
   border: 1px solid #2d3440;
 }
 
-.catalog-filter-label--radio::after {
+.catalog-filter-label-radio::after {
   top: 5px;
   left: 5px;
   display: none;
@@ -1609,60 +1604,51 @@ div {
   background-color: #2d3440;
 }
 
-.catalog-filter-fat-input:checked~.catalog-filter-label--radio::after {
+.catalog-filter-fat-input:checked~.catalog-filter-label-radio::after {
   display: block;
 }
 
-.catalog-filter-label--radio:hover::before {
+.catalog-filter-label-radio:hover::before {
   border: 1px solid #fcfcfc;
   outline: none;
 }
 
-.catalog-filter-label--radio:hover::after {
+.catalog-filter-label-radio:hover::after {
   background-color: #fcfcfc;
   outline: none;
 }
 
-.catalog-filter-fat-input:focus~.catalog-filter-label--radio::before {
+.catalog-filter-fat-input:focus~.catalog-filter-label-radio::before {
   border: 1px solid #fcfcfc;
   outline: none;
 }
 
-.catalog-filter-fat-input:focus~.catalog-filter-label--radio::after {
+.catalog-filter-fat-input:focus~.catalog-filter-label-radio::after {
   background-color: #fcfcfc;
   outline: none;
 }
 
-.catalog-filter-label--radio:active::before {
+.catalog-filter-label-radio:active::before {
   border: 1px solid rgba(0, 0, 0, 0.4);
 }
 
-.catalog-filter-label--radio:active::after {
+.catalog-filter-label-radio:active::after {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.catalog-filter-fat-input:disabled~.filter-label-radio::before {
+.catalog-filter-fat-input:disabled~.catalog-filter-label-radio::before {
   border: 1px solid rgba(0, 0, 0, 0.4);
 }
 
-.catalog-filter-fat-input:disabled~.filter-label-radio::after {
+.catalog-filter-fat-input:disabled~.catalog-filter-label-radio::after {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.catalog-filter-fillers-list {
-  display: grid;
-  padding: 11px 24px 9px;
-  background: rgba(252, 252, 252, 0.3);
-  border-radius: 18px;
-  gap: 16px;
-  grid-template-columns: repeat(5, auto);
-}
-
-.catalog-filter-label--check {
+.catalog-filter-label-check {
   padding-left: 25px;
 }
 
-.catalog-filter-label--check::after {
+.catalog-filter-label-check::after {
   content: "";
   position: absolute;
   top: 0;
@@ -1676,35 +1662,43 @@ div {
   mask-image: url("../images/icons/icon_check.svg");
 }
 
-.catalog-filter-fillers-input:checked~.catalog-filter-label--check::after {
+.catalog-filter-fillers-input:checked~.catalog-filter-label-check::after {
   -webkit-mask-image: url("../images/icons/icon_check_checked.svg");
   mask-image: url("../images/icons/icon_check_checked.svg");
 }
 
-.catalog-filter-label--check:hover::after {
+.catalog-filter-label-check:hover::after {
   background-color: #fcfcfc;
 }
 
-.catalog-filter-fillers-input:focus~.catalog-filter-label--check::after {
+.catalog-filter-fillers-list {
+  display: grid;
+  padding: 11px 24px 9px;
+  background: rgba(252, 252, 252, 0.3);
+  border-radius: 18px;
+  gap: 16px;
+  grid-template-columns: repeat(5, auto);
+}
+
+.catalog-filter-fillers-input:focus~.catalog-filter-label-check::after {
   background-color: #fcfcfc;
 }
 
-.catalog-filter-fillers-input:focus~.catalog-filter-label--check:active::after {
+.catalog-filter-fillers-input:focus~.catalog-filter-label-check:active::after {
   background-color: rgba(45, 52, 64, 0.5);
 }
 
-.catalog-filter-label--check:active::after {
+.catalog-filter-label-check:active::after {
   background-color: rgba(45, 52, 64, 0.5);
 }
 
-.catalog-filter-fillers-input:disabled~.filter-label-check::after {
+.catalog-filter-fillers-input:disabled~.catalog-filter-label-check::after {
   background-color: rgba(45, 52, 64, 0.5);
 }
 
 .pagination {
   position: relative;
   display: flex;
-  /* flex-wrap: wrap; на переполнение не срабатывает...не знаю как это исправить */
   justify-content: center;
   align-items: center;
   padding: 58px 0 58px;
