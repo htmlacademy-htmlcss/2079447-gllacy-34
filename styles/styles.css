@@ -1571,6 +1571,10 @@ div {
   grid-template-columns: repeat(4, auto);
 }
 
+.catalog-filter-label {
+  position: relative;
+}
+
 .catalog-filter-label-radio {
   padding-left: 25px;
 }
