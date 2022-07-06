@@ -524,14 +524,6 @@ img {
   }
 }
 
-/* .button-loading-container {
-  display: flex;
-  min-height: 90vh;
-  justify-content: center;
-  align-items: center;
-  background-color: #feafc3;
-} */
-
 .button-loading {
   padding-right: 56px;
   pointer-events: none;
@@ -662,6 +654,7 @@ img {
 
 .slider-control {
   position: relative;
+  display: flex;
 }
 
 .slider-thumbnail-item {
@@ -1722,6 +1715,8 @@ img {
 
 .pagination-list {
   display: flex;
+  max-width: 200px;
+  flex-wrap: wrap;
 }
 
 .pagination-link {
