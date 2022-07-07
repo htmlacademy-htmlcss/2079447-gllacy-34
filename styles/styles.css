@@ -323,9 +323,14 @@ img {
   border-radius: 4px;
 }
 
+.search {
+  padding: 24px 16px;
+}
+
 .navigation-user-link-current+.navigation-user-container {
   display: block;
 }
+
 
 .navigation-user-link-card {
   position: relative;
@@ -1715,7 +1720,7 @@ img {
 
 .pagination-list {
   display: flex;
-  max-width: 200px;
+  max-width: 400px;
   flex-wrap: wrap;
 }
 
