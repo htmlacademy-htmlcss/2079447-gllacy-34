@@ -138,14 +138,6 @@ img {
   background-color: #ff4a78;
 }
 
-.navigation-link-drop-open,
-.navigation-link-drop-open:focus {
-  color: #fcfcfc;
-  background-color: #ff4a78;
-  border: 2px solid transparent;
-  outline: none;
-}
-
 .navigation-list-drop {
   position: absolute;
   top: 100%;
@@ -158,9 +150,11 @@ img {
   box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
 }
 
-.navigation-link-drop-open+.navigation-list-drop {
+.navigation-item-drop:hover .navigation-list-drop,
+.navigation-item-drop:focus-within .navigation-list-drop {
   display: block;
 }
+
 
 .navigation-drop-title {
   margin: 0 16px;
